@@ -1,0 +1,955 @@
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - true
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - []
+[main] DEBUG com.solvd.socialNetwork.Runner  - SocialNetwork{accounts=[Account{name='NicoRufino', id=1203123}isVerified=false}], posts={}, trends=[]}
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - []
+[main] DEBUG com.solvd.socialNetwork.Runner  - SocialNetwork{accounts=[Account{name='NicoRufino', id=1203123}isVerified=false}], posts={}, trends=[]}
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - []
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is our web page', author=Account{name='Solvd', id=1323123}, likes=0}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is our web page', author=Account{name='Solvd', id=1323123}, likes=0}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - []
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is our web page', author=Account{name='Solvd', id=1323123}, likes=0}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is our web page', author=Account{name='Solvd', id=1323123}, likes=0}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}]
+[ForkJoinPool.commonPool-worker-19] DEBUG com.solvd.socialNetwork.Runner  - running, in thread: ForkJoinPool.commonPool-worker-19
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is our web page', author=Account{name='Solvd', id=1323123}, likes=0}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}]
+[ForkJoinPool.commonPool-worker-23] DEBUG com.solvd.socialNetwork.Runner  - 3 running, in thread: ForkJoinPool.commonPool-worker-23
+[ForkJoinPool.commonPool-worker-9] DEBUG com.solvd.socialNetwork.Runner  - 4 running, in thread: ForkJoinPool.commonPool-worker-9
+[ForkJoinPool.commonPool-worker-5] DEBUG com.solvd.socialNetwork.Runner  - 2 running, in thread: ForkJoinPool.commonPool-worker-5
+[ForkJoinPool.commonPool-worker-19] DEBUG com.solvd.socialNetwork.Runner  - 1 running, in thread: ForkJoinPool.commonPool-worker-19
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is our web page', author=Account{name='Solvd', id=1323123}, likes=0}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}]
+[ForkJoinPool.commonPool-worker-19] DEBUG com.solvd.socialNetwork.Runner  - 1 running, in thread: ForkJoinPool.commonPool-worker-19
+[ForkJoinPool.commonPool-worker-23] DEBUG com.solvd.socialNetwork.Runner  - 3 running, in thread: ForkJoinPool.commonPool-worker-23
+[ForkJoinPool.commonPool-worker-5] DEBUG com.solvd.socialNetwork.Runner  - 2 running, in thread: ForkJoinPool.commonPool-worker-5
+[ForkJoinPool.commonPool-worker-9] DEBUG com.solvd.socialNetwork.Runner  - 4 running, in thread: ForkJoinPool.commonPool-worker-9
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is our web page', author=Account{name='Solvd', id=1323123}, likes=0}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is our web page', author=Account{name='Solvd', id=1323123}, likes=0}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is our web page', author=Account{name='Solvd', id=1323123}, likes=0}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is our web page', author=Account{name='Solvd', id=1323123}, likes=0}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}]
+[ForkJoinPool.commonPool-worker-19] DEBUG com.solvd.socialNetwork.Runner  - 1 running, in thread: ForkJoinPool.commonPool-worker-19
+[ForkJoinPool.commonPool-worker-19] DEBUG com.solvd.socialNetwork.Runner  - 2 running, in thread: ForkJoinPool.commonPool-worker-19
+[ForkJoinPool.commonPool-worker-19] DEBUG com.solvd.socialNetwork.Runner  - 3 running, in thread: ForkJoinPool.commonPool-worker-19
+[ForkJoinPool.commonPool-worker-5] DEBUG com.solvd.socialNetwork.Runner  - 4 running, in thread: ForkJoinPool.commonPool-worker-5
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is our web page', author=Account{name='Solvd', id=1323123}, likes=0}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}]
+[ForkJoinPool.commonPool-worker-19] DEBUG com.solvd.socialNetwork.Runner  - 1 running, in thread: ForkJoinPool.commonPool-worker-19
+[ForkJoinPool.commonPool-worker-19] DEBUG com.solvd.socialNetwork.Runner  - 2 running, in thread: ForkJoinPool.commonPool-worker-19
+[ForkJoinPool.commonPool-worker-19] DEBUG com.solvd.socialNetwork.Runner  - 3 running, in thread: ForkJoinPool.commonPool-worker-19
+[ForkJoinPool.commonPool-worker-5] DEBUG com.solvd.socialNetwork.Runner  - 4 running, in thread: ForkJoinPool.commonPool-worker-5
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is our web page', author=Account{name='Solvd', id=1323123}, likes=0}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}]
+[ForkJoinPool.commonPool-worker-19] DEBUG com.solvd.socialNetwork.Runner  - 1 running, in thread: ForkJoinPool.commonPool-worker-19
+[ForkJoinPool.commonPool-worker-19] DEBUG com.solvd.socialNetwork.Runner  - 2 running, in thread: ForkJoinPool.commonPool-worker-19
+[ForkJoinPool.commonPool-worker-19] DEBUG com.solvd.socialNetwork.Runner  - 3 running, in thread: ForkJoinPool.commonPool-worker-19
+[ForkJoinPool.commonPool-worker-5] DEBUG com.solvd.socialNetwork.Runner  - 4 running, in thread: ForkJoinPool.commonPool-worker-5
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is our web page', author=Account{name='Solvd', id=1323123}, likes=0}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}]
+[ForkJoinPool.commonPool-worker-19] DEBUG com.solvd.socialNetwork.Runner  - 1 running, in thread: ForkJoinPool.commonPool-worker-19
+[ForkJoinPool.commonPool-worker-19] DEBUG com.solvd.socialNetwork.Runner  - 2 running, in thread: ForkJoinPool.commonPool-worker-19
+[ForkJoinPool.commonPool-worker-5] DEBUG com.solvd.socialNetwork.Runner  - 4 running, in thread: ForkJoinPool.commonPool-worker-5
+[ForkJoinPool.commonPool-worker-19] DEBUG com.solvd.socialNetwork.Runner  - 3 running, in thread: ForkJoinPool.commonPool-worker-19
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is our web page', author=Account{name='Solvd', id=1323123}, likes=0}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}]
+[ForkJoinPool.commonPool-worker-19] DEBUG com.solvd.socialNetwork.Runner  - 1 running, in thread: ForkJoinPool.commonPool-worker-19
+[ForkJoinPool.commonPool-worker-19] DEBUG com.solvd.socialNetwork.Runner  - 2 running, in thread: ForkJoinPool.commonPool-worker-19
+[ForkJoinPool.commonPool-worker-19] DEBUG com.solvd.socialNetwork.Runner  - 3 running, in thread: ForkJoinPool.commonPool-worker-19
+[ForkJoinPool.commonPool-worker-5] DEBUG com.solvd.socialNetwork.Runner  - 4 running, in thread: ForkJoinPool.commonPool-worker-5
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is our web page', author=Account{name='Solvd', id=1323123}, likes=0}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}]
+[ForkJoinPool.commonPool-worker-19] DEBUG com.solvd.socialNetwork.Runner  - 1 running, in thread: ForkJoinPool.commonPool-worker-19
+[ForkJoinPool.commonPool-worker-19] DEBUG com.solvd.socialNetwork.Runner  - 2 running, in thread: ForkJoinPool.commonPool-worker-19
+[ForkJoinPool.commonPool-worker-19] DEBUG com.solvd.socialNetwork.Runner  - 3 running, in thread: ForkJoinPool.commonPool-worker-19
+[ForkJoinPool.commonPool-worker-5] DEBUG com.solvd.socialNetwork.Runner  - 4 running, in thread: ForkJoinPool.commonPool-worker-5
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is our web page', author=Account{name='Solvd', id=1323123}, likes=0}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}]
+[ForkJoinPool.commonPool-worker-19] DEBUG com.solvd.socialNetwork.Runner  - 1 running, in thread: ForkJoinPool.commonPool-worker-19
+[ForkJoinPool.commonPool-worker-19] DEBUG com.solvd.socialNetwork.Runner  - 2 running, in thread: ForkJoinPool.commonPool-worker-19
+[ForkJoinPool.commonPool-worker-19] DEBUG com.solvd.socialNetwork.Runner  - 3 running, in thread: ForkJoinPool.commonPool-worker-19
+[ForkJoinPool.commonPool-worker-5] DEBUG com.solvd.socialNetwork.Runner  - 4 running, in thread: ForkJoinPool.commonPool-worker-5
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is our web page', author=Account{name='Solvd', id=1323123}, likes=0}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}]
+[ForkJoinPool.commonPool-worker-23] DEBUG com.solvd.socialNetwork.Runner  - 3 running, in thread: ForkJoinPool.commonPool-worker-23
+[ForkJoinPool.commonPool-worker-19] DEBUG com.solvd.socialNetwork.Runner  - 1 running, in thread: ForkJoinPool.commonPool-worker-19
+[ForkJoinPool.commonPool-worker-5] DEBUG com.solvd.socialNetwork.Runner  - 2 running, in thread: ForkJoinPool.commonPool-worker-5
+[ForkJoinPool.commonPool-worker-9] DEBUG com.solvd.socialNetwork.Runner  - 4 running, in thread: ForkJoinPool.commonPool-worker-9
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is our web page', author=Account{name='Solvd', id=1323123}, likes=0}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}]
+[ForkJoinPool.commonPool-worker-9] DEBUG com.solvd.socialNetwork.Runner  - 4 running, in thread: ForkJoinPool.commonPool-worker-9
+[ForkJoinPool.commonPool-worker-23] DEBUG com.solvd.socialNetwork.Runner  - 3 running, in thread: ForkJoinPool.commonPool-worker-23
+[ForkJoinPool.commonPool-worker-19] DEBUG com.solvd.socialNetwork.Runner  - 1 running, in thread: ForkJoinPool.commonPool-worker-19
+[ForkJoinPool.commonPool-worker-5] DEBUG com.solvd.socialNetwork.Runner  - 2 running, in thread: ForkJoinPool.commonPool-worker-5
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is our web page', author=Account{name='Solvd', id=1323123}, likes=0}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is our web page', author=Account{name='Solvd', id=1323123}, likes=0}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is our web page', author=Account{name='Solvd', id=1323123}, likes=0}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}]
+[ForkJoinPool.commonPool-worker-5] DEBUG com.solvd.socialNetwork.Runner  - 2 running, in thread: ForkJoinPool.commonPool-worker-5
+[ForkJoinPool.commonPool-worker-19] DEBUG com.solvd.socialNetwork.Runner  - 1 running, in thread: ForkJoinPool.commonPool-worker-19
+[ForkJoinPool.commonPool-worker-9] DEBUG com.solvd.socialNetwork.Runner  - 4 running, in thread: ForkJoinPool.commonPool-worker-9
+[ForkJoinPool.commonPool-worker-23] DEBUG com.solvd.socialNetwork.Runner  - 3 running, in thread: ForkJoinPool.commonPool-worker-23
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is our web page', author=Account{name='Solvd', id=1323123}, likes=0}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}]
+[pool-1-thread-1] DEBUG com.solvd.socialNetwork.Runner  - 1 running, in thread: pool-1-thread-1
+[pool-1-thread-2] DEBUG com.solvd.socialNetwork.Runner  - 2 running, in thread: pool-1-thread-2
+[pool-1-thread-1] DEBUG com.solvd.socialNetwork.Runner  - 3 running, in thread: pool-1-thread-1
+[pool-1-thread-2] DEBUG com.solvd.socialNetwork.Runner  - 4 running, in thread: pool-1-thread-2
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is our web page', author=Account{name='Solvd', id=1323123}, likes=0}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}]
+[pool-1-thread-1] DEBUG com.solvd.socialNetwork.Runner  - 1 running, in thread: pool-1-thread-1
+[pool-1-thread-2] DEBUG com.solvd.socialNetwork.Runner  - 2 running, in thread: pool-1-thread-2
+[pool-1-thread-3] DEBUG com.solvd.socialNetwork.Runner  - 3 running, in thread: pool-1-thread-3
+[pool-1-thread-1] DEBUG com.solvd.socialNetwork.Runner  - 4 running, in thread: pool-1-thread-1
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is our web page', author=Account{name='Solvd', id=1323123}, likes=0}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}]
+[pool-1-thread-1] DEBUG com.solvd.socialNetwork.Runner  - 1 running, in thread: pool-1-thread-1
+[pool-1-thread-3] DEBUG com.solvd.socialNetwork.Runner  - 3 running, in thread: pool-1-thread-3
+[pool-1-thread-2] DEBUG com.solvd.socialNetwork.Runner  - 2 running, in thread: pool-1-thread-2
+[pool-1-thread-1] DEBUG com.solvd.socialNetwork.Runner  - 4 running, in thread: pool-1-thread-1
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is our web page', author=Account{name='Solvd', id=1323123}, likes=0}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}]
+[pool-1-thread-2] DEBUG com.solvd.socialNetwork.Runner  - 2nd running, in thread: pool-1-thread-2
+[pool-1-thread-1] DEBUG com.solvd.socialNetwork.Runner  - 1st running, in thread: pool-1-thread-1
+[pool-1-thread-3] DEBUG com.solvd.socialNetwork.Runner  - 3rd running, in thread: pool-1-thread-3
+[pool-1-thread-2] DEBUG com.solvd.socialNetwork.Runner  - th running, in thread: pool-1-thread-2
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is our web page', author=Account{name='Solvd', id=1323123}, likes=0}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}]
+[pool-1-thread-1] DEBUG com.solvd.socialNetwork.Runner  - 1st running, in thread: pool-1-thread-1
+[pool-1-thread-2] DEBUG com.solvd.socialNetwork.Runner  - 2nd running, in thread: pool-1-thread-2
+[pool-1-thread-3] DEBUG com.solvd.socialNetwork.Runner  - 3rd running, in thread: pool-1-thread-3
+[pool-1-thread-2] DEBUG com.solvd.socialNetwork.Runner  - 4th running, in thread: pool-1-thread-2
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is our web page', author=Account{name='Solvd', id=1323123}, likes=0}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}]
+[pool-1-thread-1] DEBUG com.solvd.socialNetwork.Runner  - 1st running, in thread: pool-1-thread-1
+[pool-1-thread-2] DEBUG com.solvd.socialNetwork.Runner  - 2nd running, in thread: pool-1-thread-2
+[pool-1-thread-3] DEBUG com.solvd.socialNetwork.Runner  - 3rd running, in thread: pool-1-thread-3
+[pool-1-thread-1] DEBUG com.solvd.socialNetwork.Runner  - 4th running, in thread: pool-1-thread-1
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is our web page', author=Account{name='Solvd', id=1323123}, likes=0}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}]
+[pool-1-thread-3] DEBUG com.solvd.socialNetwork.Runner  - 3rd running, in thread: pool-1-thread-3
+[pool-1-thread-2] DEBUG com.solvd.socialNetwork.Runner  - 2nd running, in thread: pool-1-thread-2
+[pool-1-thread-1] DEBUG com.solvd.socialNetwork.Runner  - 1st running, in thread: pool-1-thread-1
+[pool-1-thread-2] DEBUG com.solvd.socialNetwork.Runner  - 4th running, in thread: pool-1-thread-2
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is our web page', author=Account{name='Solvd', id=1323123}, likes=0}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}]
+[pool-1-thread-3] DEBUG com.solvd.socialNetwork.Runner  - 3rd running, in thread: pool-1-thread-3
+[pool-1-thread-1] DEBUG com.solvd.socialNetwork.Runner  - 1st running, in thread: pool-1-thread-1
+[pool-1-thread-2] DEBUG com.solvd.socialNetwork.Runner  - 2nd running, in thread: pool-1-thread-2
+[pool-1-thread-3] DEBUG com.solvd.socialNetwork.Runner  - 4th running, in thread: pool-1-thread-3
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is our web page', author=Account{name='Solvd', id=1323123}, likes=0}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}
+[main] DEBUG com.solvd.socialNetwork.exceptions.NotInGroupException  - You're not in this group
+[main] ERROR com.solvd.socialNetwork.Runner  - com.solvd.socialNetwork.exceptions.NotInGroupException
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - --------------
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - First
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 1,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Second
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - 2,5th
+[main] DEBUG com.solvd.socialNetwork.LinkedList  - Third
+[main] DEBUG com.solvd.socialNetwork.Runner  - false
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Account{name='NicoRufino', id=1203123}isVerified=false}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is our web page', author=Account{name='Solvd', id=1323123}, likes=0}]
+[main] DEBUG com.solvd.socialNetwork.Runner  - [Post{text='This is my first post', author=Account{name='NicoRufino', id=1203123}isVerified=false}, likes=2}]
+[pool-1-thread-1] DEBUG com.solvd.socialNetwork.Runner  - 1st running, in thread: pool-1-thread-1
+[pool-1-thread-3] DEBUG com.solvd.socialNetwork.Runner  - 3rd running, in thread: pool-1-thread-3
+[pool-1-thread-2] DEBUG com.solvd.socialNetwork.Runner  - 2nd running, in thread: pool-1-thread-2
+[pool-1-thread-1] DEBUG com.solvd.socialNetwork.Runner  - 4th running, in thread: pool-1-thread-1

@@ -1,0 +1,19 @@
+{aenean=6, tempor=6, efficitur=2, mollis=2, elementum=2, bibendum=1, commodo=3, purus=11, augue=6, justo=4, lorem=5, leo=6, id=11, nam=5, semper=4, volutpat=7, ac=15, sodales=3, in=17, finibus=2, velit=6, urna=7, 
+
+duis=1, luctus=4, fusce=4, at=17, pellentesque=7, platea=2, ipsum=4, convallis=2, elit=8, 
+
+etiam=1, ullamcorper=3, dictumst=2, laoreet=5, vestibulum=6, congue=6, arcu=6, dolor=3, iaculis=4, sed=22, duis=5, metus=4, dictum=5, vehicula=6, sem=6, dapibus=3, pulvinar=5, diam=6, porta=2, ultricies=3, interdum=8, a=9, nisi=4, morbi=9, quam=9, nisl=5, tincidunt=8, ultrices=7, ornare=1, condimentum=5, aliquam=3, magna=8, praesent=4, auctor=1, turpis=5, nibh=8, 
+
+integer=1, ante=6, placerat=2, malesuada=5, rutrum=9, sapien=7, quis=7, porttitor=5, eros=7, sagittis=4, maximus=5, tristique=10, etiam=8, suscipit=9, adipiscing=1, cursus=4, habitasse=2, est=8, odio=5, eleifend=2, accumsan=4, hac=2, egestas=5, integer=1, nec=12, scelerisque=3, nunc=13, erat=5, facilisis=9, euismod=2, donec=5, vivamus=3, mauris=10, neque=4, imperdiet=5, vel=9, molestie=4, mi=8, feugiat=6, ut=10, 
+
+vestibulum=1, enim=5, lobortis=4, ligula=8, consequat=3, varius=3, dignissim=6, vulputate=9, nullam=5, fermentum=5, et=10, eu=12, mattis=5, lacus=6, ex=6, 
+
+maecenas=1, vitae=13, posuere=4, tellus=11, felis=11, orci=9, faucibus=7, phasellus=3, lacinia=2, blandit=8, pharetra=10, massa=7, lectus=5, venenatis=7, curae;=1, rhoncus=5, viverra=2, tempus=9, primis=1, non=16, risus=10, proin=1, cras=5, 
+
+suspendisse=1, maecenas=4, 
+
+ut=1, hendrerit=8, sit=11, tortor=7, fringilla=2, curabitur=2, 
+
+nunc=2, cubilia=1, sollicitudin=4, suspendisse=1, aliquet=3, amet=11, pretium=7, quisque=7, 
+
+fusce=1, dui=4, libero=6, consectetur=7, nulla=5, eget=16, gravida=7}
