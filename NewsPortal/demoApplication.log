@@ -1,66 +1,91 @@
-[main] ERROR com.solvd.newsPortal.Runner  - Error loading mysql driver class: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
-[main] DEBUG com.solvd.newsPortal.ConnectionPool  - connections created
-[main] DEBUG com.solvd.newsPortal.ConnectionPool  - connections created
-[main] ERROR com.solvd.newsPortal.ConnectionPool  - Error getting database connection from 52.59.193.212:3306
+[main] ERROR com.solvd.newsPortal.main.Runner  - Error loading mysql driver class: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+[main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
+[main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
+[main] ERROR com.solvd.newsPortal.connectionPool.ConnectionPool  - Error getting database connection from 52.59.193.212:3306
 java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3306/newsPortal
-[main] DEBUG com.solvd.newsPortal.ConnectionPool  - connections created
-[main] ERROR com.solvd.newsPortal.ConnectionPool  - Error getting database connection from 52.59.193.212:3306
+[main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
+[main] ERROR com.solvd.newsPortal.connectionPool.ConnectionPool  - Error getting database connection from 52.59.193.212:3306
 java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3306/newsPortal
-[main] DEBUG com.solvd.newsPortal.ConnectionPool  - connections created
-[main] ERROR com.solvd.newsPortal.ConnectionPool  - Error getting database connection from 52.59.193.212:3306
+[main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
+[main] ERROR com.solvd.newsPortal.connectionPool.ConnectionPool  - Error getting database connection from 52.59.193.212:3306
 java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3306/car_factory_sergio_marchio
-[main] DEBUG com.solvd.newsPortal.ConnectionPool  - connections created
-[main] DEBUG com.solvd.newsPortal.ConnectionPool  - connections created
-[main] ERROR com.solvd.newsPortal.Runner  - java.sql.SQLException: Before start of result set
-[main] DEBUG com.solvd.newsPortal.ConnectionPool  - connections created
-[main] DEBUG com.solvd.newsPortal.Runner  - name: politics
-[main] DEBUG com.solvd.newsPortal.ConnectionPool  - connections created
-[main] DEBUG com.solvd.newsPortal.Runner  - name: politics
-[main] ERROR com.solvd.newsPortal.dao.article.ArticleDAO  - java.sql.SQLException: Parameter index out of range (0 < 1 ).
-[main] DEBUG com.solvd.newsPortal.ConnectionPool  - connections created
-[main] DEBUG com.solvd.newsPortal.Runner  - name: politics
-[main] ERROR com.solvd.newsPortal.dao.article.ArticleDAO  - java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).
-[main] DEBUG com.solvd.newsPortal.ConnectionPool  - connections created
-[main] DEBUG com.solvd.newsPortal.Runner  - name: politics
-[main] ERROR com.solvd.newsPortal.dao.article.ArticleDAO  - java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`newsPortal`.`Articles`, CONSTRAINT `fk_Articles_Users1` FOREIGN KEY (`author`) REFERENCES `Users` (`id`) ON UPDATE CASCADE)
-[main] DEBUG com.solvd.newsPortal.ConnectionPool  - connections created
-[main] DEBUG com.solvd.newsPortal.Runner  - name: politics
-[main] ERROR com.solvd.newsPortal.dao.article.ArticleDAO  - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INSERT INTO `newsPortal`.`Articles` (`name`, `date`, `body`, `Suscription_level_' at line 1
-[main] DEBUG com.solvd.newsPortal.ConnectionPool  - connections created
-[main] DEBUG com.solvd.newsPortal.Runner  - name: politics
-[main] ERROR com.solvd.newsPortal.dao.article.ArticleDAO  - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INSERT INTO `newsPortal`.`Articles` (`name`, `date`, `body`, `Suscription_level_' at line 1
-[main] DEBUG com.solvd.newsPortal.ConnectionPool  - connections created
-[main] DEBUG com.solvd.newsPortal.Runner  - name: politics
-[main] ERROR com.solvd.newsPortal.dao.article.ArticleDAO  - java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`newsPortal`.`Articles`, CONSTRAINT `fk_Articles_Users1` FOREIGN KEY (`author`) REFERENCES `Users` (`id`) ON UPDATE CASCADE)
-[main] DEBUG com.solvd.newsPortal.ConnectionPool  - connections created
-[main] DEBUG com.solvd.newsPortal.Runner  - name: politics
-[main] DEBUG com.solvd.newsPortal.dao.article.ArticleDAO  - item created
-[main] DEBUG com.solvd.newsPortal.ConnectionPool  - connections created
-[main] DEBUG com.solvd.newsPortal.Runner  - name: politics
-[main] DEBUG com.solvd.newsPortal.dao.article.ArticleDAO  - item created
-[main] DEBUG com.solvd.newsPortal.ConnectionPool  - connections created
-[main] DEBUG com.solvd.newsPortal.Runner  - name: politics
-[main] DEBUG com.solvd.newsPortal.dao.article.ArticleDAO  - item created
-[main] DEBUG com.solvd.newsPortal.Runner  - 10
-[main] DEBUG com.solvd.newsPortal.ConnectionPool  - connections created
-[main] DEBUG com.solvd.newsPortal.Runner  - name: politics
-[main] DEBUG com.solvd.newsPortal.dao.article.ArticleDAO  - item created
-[main] DEBUG com.solvd.newsPortal.dao.article.ArticleDAO  - item deleted
-[main] DEBUG com.solvd.newsPortal.ConnectionPool  - connections created
-[main] DEBUG com.solvd.newsPortal.Runner  - name: politics
-[main] DEBUG com.solvd.newsPortal.dao.article.ArticleDAO  - item created
-[main] DEBUG com.solvd.newsPortal.Runner  - 12
-[main] DEBUG com.solvd.newsPortal.dao.article.ArticleDAO  - item deleted
-[main] DEBUG com.solvd.newsPortal.ConnectionPool  - connections created
-[main] DEBUG com.solvd.newsPortal.Runner  - name: politics
-[main] DEBUG com.solvd.newsPortal.dao.article.ArticleDAO  - item created
-[main] DEBUG com.solvd.newsPortal.Runner  - 13
-[main] DEBUG com.solvd.newsPortal.dao.article.ArticleDAO  - item deleted
-[main] DEBUG com.solvd.newsPortal.ConnectionPool  - connections created
-[main] DEBUG com.solvd.newsPortal.Runner  - name: politics
-[main] DEBUG com.solvd.newsPortal.dao.article.ArticleDAO  - item created
-[main] DEBUG com.solvd.newsPortal.Runner  - 14
-[main] DEBUG com.solvd.newsPortal.dao.article.ArticleDAO  - item deleted
-[main] DEBUG com.solvd.newsPortal.dao.category.CategoryDAO  - Category{id=1, name='politics'}
-[main] DEBUG com.solvd.newsPortal.dao.category.CategoryDAO  - item updated
-[main] DEBUG com.solvd.newsPortal.dao.category.CategoryDAO  - Category{id=1, name='name test'}
+[main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
+[main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
+[main] ERROR com.solvd.newsPortal.main.Runner  - java.sql.SQLException: Before start of result set
+[main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
+[main] DEBUG com.solvd.newsPortal.main.Runner  - name: politics
+[main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
+[main] DEBUG com.solvd.newsPortal.main.Runner  - name: politics
+[main] ERROR com.solvd.newsPortal.dao.jdbc.ArticleDAO  - java.sql.SQLException: Parameter index out of range (0 < 1 ).
+[main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
+[main] DEBUG com.solvd.newsPortal.main.Runner  - name: politics
+[main] ERROR com.solvd.newsPortal.dao.jdbc.ArticleDAO  - java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).
+[main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
+[main] DEBUG com.solvd.newsPortal.main.Runner  - name: politics
+[main] ERROR com.solvd.newsPortal.dao.jdbc.ArticleDAO  - java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`newsPortal`.`Articles`, CONSTRAINT `fk_Articles_Users1` FOREIGN KEY (`author`) REFERENCES `Users` (`id`) ON UPDATE CASCADE)
+[main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
+[main] DEBUG com.solvd.newsPortal.main.Runner  - name: politics
+[main] ERROR com.solvd.newsPortal.dao.jdbc.ArticleDAO  - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INSERT INTO `newsPortal`.`Articles` (`name`, `date`, `body`, `Suscription_level_' at line 1
+[main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
+[main] DEBUG com.solvd.newsPortal.main.Runner  - name: politics
+[main] ERROR com.solvd.newsPortal.dao.jdbc.ArticleDAO  - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INSERT INTO `newsPortal`.`Articles` (`name`, `date`, `body`, `Suscription_level_' at line 1
+[main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
+[main] DEBUG com.solvd.newsPortal.main.Runner  - name: politics
+[main] ERROR com.solvd.newsPortal.dao.jdbc.ArticleDAO  - java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`newsPortal`.`Articles`, CONSTRAINT `fk_Articles_Users1` FOREIGN KEY (`author`) REFERENCES `Users` (`id`) ON UPDATE CASCADE)
+[main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
+[main] DEBUG com.solvd.newsPortal.main.Runner  - name: politics
+[main] DEBUG com.solvd.newsPortal.dao.jdbc.ArticleDAO  - item created
+[main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
+[main] DEBUG com.solvd.newsPortal.main.Runner  - name: politics
+[main] DEBUG com.solvd.newsPortal.dao.jdbc.ArticleDAO  - item created
+[main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
+[main] DEBUG com.solvd.newsPortal.main.Runner  - name: politics
+[main] DEBUG com.solvd.newsPortal.dao.jdbc.ArticleDAO  - item created
+[main] DEBUG com.solvd.newsPortal.main.Runner  - 10
+[main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
+[main] DEBUG com.solvd.newsPortal.main.Runner  - name: politics
+[main] DEBUG com.solvd.newsPortal.dao.jdbc.ArticleDAO  - item created
+[main] DEBUG com.solvd.newsPortal.dao.jdbc.ArticleDAO  - item deleted
+[main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
+[main] DEBUG com.solvd.newsPortal.main.Runner  - name: politics
+[main] DEBUG com.solvd.newsPortal.dao.jdbc.ArticleDAO  - item created
+[main] DEBUG com.solvd.newsPortal.main.Runner  - 12
+[main] DEBUG com.solvd.newsPortal.dao.jdbc.ArticleDAO  - item deleted
+[main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
+[main] DEBUG com.solvd.newsPortal.main.Runner  - name: politics
+[main] DEBUG com.solvd.newsPortal.dao.jdbc.ArticleDAO  - item created
+[main] DEBUG com.solvd.newsPortal.main.Runner  - 13
+[main] DEBUG com.solvd.newsPortal.dao.jdbc.ArticleDAO  - item deleted
+[main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
+[main] DEBUG com.solvd.newsPortal.main.Runner  - name: politics
+[main] DEBUG com.solvd.newsPortal.dao.jdbc.ArticleDAO  - item created
+[main] DEBUG com.solvd.newsPortal.main.Runner  - 14
+[main] DEBUG com.solvd.newsPortal.dao.jdbc.ArticleDAO  - item deleted
+[main] DEBUG com.solvd.newsPortal.dao.jdbc.CategoryDAO  - Category{id=1, name='politics'}
+[main] DEBUG com.solvd.newsPortal.dao.jdbc.CategoryDAO  - item updated
+[main] DEBUG com.solvd.newsPortal.dao.jdbc.CategoryDAO  - Category{id=1, name='name test'}
+[main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
+[main] DEBUG com.solvd.newsPortal.main.Runner  - name: name test
+[main] DEBUG com.solvd.newsPortal.dao.jdbc.ArticleDAO  - item created
+[main] DEBUG com.solvd.newsPortal.main.Runner  - 15
+[main] DEBUG com.solvd.newsPortal.dao.jdbc.ArticleDAO  - item deleted
+[main] DEBUG com.solvd.newsPortal.dao.jdbc.CategoryDAO  - Category{id=1, name='name test'}
+[main] DEBUG com.solvd.newsPortal.dao.jdbc.CategoryDAO  - item updated
+[main] DEBUG com.solvd.newsPortal.dao.jdbc.CategoryDAO  - Category{id=1, name='name test'}
+[main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
+[main] DEBUG com.solvd.newsPortal.main.Runner  - name: name test
+[main] DEBUG com.solvd.newsPortal.dao.mySql.jdbc.UserDAO  - User{id=2, name='Nicolás', last_name='Rufino', age=19, suscription_level=null}
+[main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
+[main] DEBUG com.solvd.newsPortal.main.Runner  - name: name test
+[main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
+[main] DEBUG com.solvd.newsPortal.main.Runner  - name: name test
+[main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
+[main] DEBUG com.solvd.newsPortal.main.Runner  - name: name test
+[main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
+[main] DEBUG com.solvd.newsPortal.main.Runner  - name: name test
+[main] DEBUG com.solvd.newsPortal.dao.mySql.jdbc.Suscription_levelDAO  - com.solvd.newsPortal.classes.user.Suscription_level@64b0598
+[main] DEBUG com.solvd.newsPortal.main.Runner  - User{id=2, name='Nicolás', last_name='Rufino', age=19, suscription_level=com.solvd.newsPortal.classes.user.Suscription_level@64b0598}
+[main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
+[main] DEBUG com.solvd.newsPortal.main.Runner  - name: name test
+[main] DEBUG com.solvd.newsPortal.dao.mySql.jdbc.Suscription_levelDAO  - Suscription_level{id=2, name='Plus', cost=10.0}
+[main] DEBUG com.solvd.newsPortal.main.Runner  - User{id=2, name='Nicolás', last_name='Rufino', age=19, suscription_level=Suscription_level{id=2, name='Plus', cost=10.0}}
