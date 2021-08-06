@@ -7,7 +7,7 @@ import org.apache.log4j.Logger;
 
 import java.sql.*;
 
-public class LocationDAO extends AbstractMysqlJdbcDAO implements ILocationDAO {
+public class LocationDAO extends AbstractMysqlJdbcDAO<Location> implements ILocationDAO {
     private final static Logger LOGGER = Logger.getLogger(LocationDAO.class);
     private final static String CREATE = "INSERT INTO `newsPortal`.`Location` (`name`) VALUES (?);";
     private final static String GET = "SELECT * FROM newsPortal.Location WHERE id = ?;";
@@ -15,75 +15,35 @@ public class LocationDAO extends AbstractMysqlJdbcDAO implements ILocationDAO {
     private final static String DELETE = "DELETE FROM `newsPortal`.`Location` WHERE (`id` = ?);";
 
     @Override
-    public void createItem(Location item) {
-        Connection connection = ConnectionPool.getInstance().getConnection();
-
-        try(PreparedStatement ps = connection.prepareStatement(CREATE, Statement.RETURN_GENERATED_KEYS)) {
-            ps.setString(1, item.getName());
-            ps.executeUpdate();
-            ResultSet generatedKeys = ps.getGeneratedKeys();
-            if (generatedKeys.next()) {
-                item.setId(generatedKeys.getLong(1));
-            }
-            LOGGER.debug("item created");
-
-        } catch (SQLException throwables) {
-            LOGGER.error(throwables);
-        } finally {
-            ConnectionPool.getInstance().returnConnection(connection);
-        }
-    }
-
-    @Override
-    public Location getItemById(Long id) {
-        Connection connection = ConnectionPool.getInstance().getConnection();
+    protected Location build(ResultSet rs) throws SQLException {
         Location l = new Location();
-        try(PreparedStatement ps = connection.prepareStatement(GET)){
-            ps.setLong(1, id);
-            ResultSet rs = ps.executeQuery();
-            rs.next();
-            l.setName(rs.getString("name"));
-            l.setId(rs.getLong("id"));
-            LOGGER.debug(l.toString());
-
-
-        } catch (SQLException throwables) {
-            LOGGER.error(throwables);
-        } finally {
-            ConnectionPool.getInstance().returnConnection(connection);
-        }
+        l.setName(rs.getString("name"));
+        l.setId(rs.getLong("id"));
         return l;
     }
 
     @Override
+    protected void setParameters(Location item, PreparedStatement ps) throws SQLException {
+        ps.setString(1, item.getName());
+    }
+
+    @Override
+    public void createItem(Location item) {
+        createItem(item, CREATE);
+    }
+
+    @Override
+    public Location getItemById(Long id) {
+        return getItemById(id, GET);
+    }
+
+    @Override
     public void updateItem(Location item, Long id) {
-        Connection connection = ConnectionPool.getInstance().getConnection();
-
-        try(PreparedStatement ps = connection.prepareStatement(UPDATE)) {
-            ps.setString(1, item.getName());
-            ps.setLong(2, id);
-            ps.executeUpdate();
-            LOGGER.debug("item updated");
-
-        } catch (SQLException throwables) {
-            LOGGER.error(throwables);
-        } finally {
-            ConnectionPool.getInstance().returnConnection(connection);
-        }
+        updateItem(item, id, UPDATE);
     }
 
     @Override
     public void deleteById(Long id) {
-        Connection connection = ConnectionPool.getInstance().getConnection();
-        try(PreparedStatement ps = connection.prepareStatement(DELETE)) {
-            ps.setLong(1, id);
-            ps.executeUpdate();
-            LOGGER.debug("item deleted");
-
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        } finally {
-            ConnectionPool.getInstance().returnConnection(connection);
-        }
+        deleteItem(id, DELETE);
     }
 }
