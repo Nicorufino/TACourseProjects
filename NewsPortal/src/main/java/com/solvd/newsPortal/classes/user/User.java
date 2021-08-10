@@ -1,10 +1,19 @@
 package com.solvd.newsPortal.classes.user;
 
+import javax.xml.bind.annotation.*;
+
+@XmlRootElement(name = "author")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class User {
+    @XmlAttribute(name = "id")
     private Long id;
+    @XmlElement(name = "firstname")
     private String name;
+    @XmlElement(name = "lastname")
     private String last_name;
+    @XmlAttribute(name = "age")
     private Integer age;
+    @XmlElement(name = "suscriptionLevel")
     private Suscription_level suscription_level;
 
     public User() {
@@ -12,6 +21,14 @@ public class User {
 
     public User(Long id) {
         this.id = id;
+    }
+
+    public User(Long id, String name, String last_name, Integer age, Suscription_level suscription_level) {
+        this.id = id;
+        this.name = name;
+        this.last_name = last_name;
+        this.age = age;
+        this.suscription_level = suscription_level;
     }
 
     public Long getId() {

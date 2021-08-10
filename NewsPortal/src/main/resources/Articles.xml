@@ -1,0 +1,116 @@
+<articles>
+
+	<article id="1">
+		<name>First Article</name>
+
+		<date>15-02-2020</date>
+
+		<body>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</body>
+
+		<suscriptionLevel id="2">
+
+			<name>Plus</name>
+
+			<cost>8.50</cost>
+
+		</suscriptionLevel>
+
+		<category id="3">
+
+			<name>Politics</name>
+
+		</category>
+
+		<author id="5" age="37">
+
+			<firstname>John</firstname>
+
+			<lastname>Smith</lastname>
+
+			<suscriptionLevel id="1">
+
+				<name>Free</name>
+
+				<cost>0</cost>
+
+			</suscriptionLevel>
+
+		</author>
+	</article>
+
+	<article id="2">
+		<name>Lionel Messi leaves FC Barcelona</name>
+		
+		<date>05-08-2021</date>
+		
+		<body> Lionel Messi wept on Sunday as he bade farewell to his boyhood team FC Barcelona and confirmed he was talking with French club Paris St Germain over a possible move.</body>
+
+		<suscriptionLevel id="3">
+			
+			<name>Premium</name>
+			
+			<cost>12.50</cost>
+			
+		</suscriptionLevel>
+			
+		<category id="7">
+			
+			<name>Football</name>
+			
+		</category>
+		
+		<author id="16" age="29">
+			
+			<firstname>Joseph</firstname>
+			
+			<lastname>Walker</lastname>
+			
+			<suscriptionLevel id="2">
+			
+				<name>Plus</name>
+			
+				<cost>8.50</cost>
+			
+			</suscriptionLevel>
+		
+		</author>
+	</article>
+
+	<article id="3">
+		<name>Amazon to pay shoppers hurt by others' products, does not admit liability</name>
+
+		<date>27-06-2021</date>
+
+		<body>Amazon.com Inc (AMZN.O) on Tuesday said it would pay customers who suffer injuries or property damage from defective goods others sell on its U.S. platform, in a new policy that could reduce litigation.</body>
+
+		<suscriptionLevel id="1">
+
+			<name>Free</name>
+
+			<cost>0</cost>
+
+		</suscriptionLevel>
+
+		<category id="2">
+
+			<name>Technology</name>
+
+		</category>
+
+		<author id="12" age="32">
+
+			<firstname>Richard</firstname>
+
+			<lastname>Pullin</lastname>
+
+			<suscriptionLevel id="2">
+
+				<name>Plus</name>
+
+				<cost>8.50</cost>
+
+			</suscriptionLevel>
+
+		</author>
+	</article>
+</articles>

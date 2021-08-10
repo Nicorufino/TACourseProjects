@@ -1,7 +1,13 @@
 package com.solvd.newsPortal.classes.article;
 
+import javax.xml.bind.annotation.*;
+
+@XmlRootElement(name = "category")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Category {
+    @XmlAttribute(name = "id")
     private Long id;
+    @XmlElement(name = "name")
     private String name;
 
     public Category() {
@@ -9,6 +15,11 @@ public class Category {
 
     public Category(Long id) {
         this.id = id;
+    }
+
+    public Category(Long id, String name) {
+        this.id = id;
+        this.name = name;
     }
 
     public Long getId() {

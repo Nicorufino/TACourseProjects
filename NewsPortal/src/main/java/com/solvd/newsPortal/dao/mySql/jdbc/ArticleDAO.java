@@ -38,7 +38,7 @@ public class ArticleDAO extends AbstractMysqlJdbcDAO<Article> implements IArticl
     @Override
     protected void setParameters(Article item, PreparedStatement ps) throws SQLException {
         ps.setString(1, item.getName());
-        ps.setDate(2, item.getDate());
+        ps.setDate(2, Date.valueOf(item.getDate()));
         ps.setString(3, item.getBody());
         ps.setLong(4, item.getSuscription_level().getId());
         ps.setLong(5, item.getCategory().getId());
