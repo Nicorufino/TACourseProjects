@@ -22,6 +22,7 @@ public class Articles {
         this.articleList = new ArrayList<Article>();
     }
 
+
     public Articles(ArrayList<Article> articleList) {
         this.articleList = articleList;
     }
