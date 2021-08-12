@@ -33,10 +33,7 @@ public class Deserializer {
     
 
     public static ArrayList<Article> deserialize(File file) throws ParserConfigurationException, IOException, SAXException, ParseException {
-        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-        DocumentBuilder db = dbf.newDocumentBuilder();
-        Document doc = db.parse(file);
-        NodeList list = doc.getElementsByTagName("article");
+        NodeList list = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(file).getElementsByTagName("article");
         ArrayList<Article> articles = new ArrayList<Article>();
         
 
@@ -46,12 +43,9 @@ public class Deserializer {
             Node node = list.item(i);
 
             if (node.getNodeType() == Node.ELEMENT_NODE) {
-
                 Element element = (Element) node;
-
                 deserialized.setId(Long.valueOf(element.getAttribute("id")));
 
-                // get text
                 deserialized.setName((element.getElementsByTagName("name").item(0).getTextContent()));
 
                 java.util.Date date = new SimpleDateFormat("dd-MM-yyyy").parse(element.getElementsByTagName("date").item(0).getTextContent());
@@ -88,8 +82,6 @@ public class Deserializer {
             }
             articles.add(deserialized);
         }
-
-        LOGGER.debug("xd");
         return articles;
     }
 }

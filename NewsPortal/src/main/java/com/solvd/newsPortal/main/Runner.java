@@ -6,6 +6,7 @@ import com.solvd.newsPortal.classes.article.Articles;
 import com.solvd.newsPortal.classes.article.Category;
 import com.solvd.newsPortal.classes.user.Suscription_level;
 import com.solvd.newsPortal.classes.user.User;
+import com.solvd.newsPortal.dom.Serializer;
 import org.apache.log4j.Logger;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -20,6 +21,8 @@ import javax.xml.bind.Unmarshaller;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
@@ -66,6 +69,15 @@ public class Runner {
 
         Articles articles = new Articles(deserialize(new File("src/main/resources/Articles.xml")));
         articles.getArticleList().stream().forEach(article -> LOGGER.debug(article));
+
+        Serializer serializer = new Serializer();
+        try {
+            serializer.serialize(first);
+        } catch (TransformerConfigurationException e) {
+            LOGGER.debug(e);
+        } catch (TransformerException e) {
+            LOGGER.debug(e);
+        }
 
     }
 }
