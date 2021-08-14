@@ -1,5 +1,8 @@
 package com.solvd.newsPortal.main;
 
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 import com.mysql.cj.result.LocalDateTimeValueFactory;
 import com.solvd.newsPortal.classes.article.Article;
 import com.solvd.newsPortal.classes.article.Articles;
@@ -35,10 +38,7 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.time.chrono.ChronoLocalDate;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
+import java.util.*;
 
 import static com.solvd.newsPortal.dom.Deserializer.deserialize;
 
@@ -57,7 +57,7 @@ public class Runner {
         // LOGGER.debug(unmarshalledArticles.getArticleList().get(2).toString());
 
 
-        Article first = new Article(18L, "Marshalling with JaxB", LocalDate.of(2021, 8, 10), "body", new Suscription_level(7L, "test", 9.99F), new Category(99L, "test"), new User(255L, "Lorem", "Ipsum", 25, new Suscription_level(7L, "test", 9.99F)));
+        Article first = new Article(18L, "Marshalling with JaxB", LocalDate.of(2021, 8, 10), "body", new Suscription_level(7L, "test", 25F), new Category(70L, "test"), new User(255L, "Lorem", "Ipsum", 25, new Suscription_level(7L, "test", 9.99F)));
         Articles articlesToMarshall = new Articles();
         articlesToMarshall.getArticleList().add(first);
 
@@ -68,7 +68,7 @@ public class Runner {
         marshaller.marshal(articlesToMarshall, new File("src/main/resources/Marshalled.xml"));
 
         Articles articles = new Articles(deserialize(new File("src/main/resources/Articles.xml")));
-        articles.getArticleList().stream().forEach(article -> LOGGER.debug(article));
+        //articles.getArticleList().stream().forEach(article -> LOGGER.debug(article));
 
         Serializer serializer = new Serializer();
         try {
@@ -78,6 +78,13 @@ public class Runner {
         } catch (TransformerException e) {
             LOGGER.debug(e);
         }
+
+        ObjectMapper objectMapper = new ObjectMapper().enable(SerializationFeature.INDENT_OUTPUT);
+        objectMapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
+        Articles jsonArticles = objectMapper.readValue(new File("src/main/resources/Articles.json"), Articles.class);
+        jsonArticles.getArticleList().stream().forEach(article -> LOGGER.debug(article));
+
+        objectMapper.writeValue(new File("src/main/resources/Marshalled.json"), first);
 
     }
 }

@@ -1,7 +1,15 @@
 package com.solvd.newsPortal.classes.article;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonRootName;
+import com.fasterxml.jackson.annotation.JsonTypeName;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.solvd.newsPortal.classes.user.Suscription_level;
 import com.solvd.newsPortal.classes.user.User;
+import com.solvd.newsPortal.jackson.LocalDateDeserializer;
+import com.solvd.newsPortal.jackson.LocalDateSerializer;
 import com.solvd.newsPortal.jaxbAdapters.DateAdapter;
 
 import javax.xml.bind.annotation.*;
@@ -12,20 +20,30 @@ import java.time.LocalDate;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement(name = "article")
+@JsonTypeName("article")
 public class Article {
     @XmlAttribute(name = "id")
+    @JsonProperty("id")
     private Long id;
+    @JsonProperty("name")
     @XmlElement(name = "name")
     private String name;
-    @XmlElement(name = "date", required = true)
+    @XmlElement(name = "date")
+    @JsonProperty("date")
     @XmlJavaTypeAdapter(DateAdapter.class)
+    @JsonDeserialize(using = LocalDateDeserializer.class)
+    @JsonSerialize(using = LocalDateSerializer.class)
     private LocalDate date;
+    @JsonProperty("body")
     @XmlElement(name = "body")
     private String body;
+    @JsonProperty("suscriptionLevel")
     @XmlElement(name = "suscriptionLevel")
     private Suscription_level suscription_level;
+    @JsonProperty("category")
     @XmlElement(name = "category")
     private Category category;
+    @JsonProperty("author")
     @XmlElement(name = "author")
     private User author;
 

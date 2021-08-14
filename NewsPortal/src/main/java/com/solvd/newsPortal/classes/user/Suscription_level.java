@@ -1,14 +1,19 @@
 package com.solvd.newsPortal.classes.user;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.xml.bind.annotation.*;
 
 @XmlRootElement(name = "suscriptionLevel")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Suscription_level {
+    @JsonProperty("id")
     @XmlAttribute(name = "id")
     private Long id;
+    @JsonProperty("name")
     @XmlElement(name = "name")
     private String name;
+    @JsonProperty("cost")
     @XmlElement(name = "cost")
     private Float cost;
 
