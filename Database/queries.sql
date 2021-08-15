@@ -1,3 +1,4 @@
+
 INSERT INTO newsPortal.Suscription_level (`name`, `cost`) Values ('free', 0);
 INSERT INTO newsPortal.Suscription_level (`name`, `cost`) Values ('plus', 10);
 INSERT INTO newsPortal.Suscription_level (`name`, `cost`) Values ('premium', 15);
@@ -52,14 +53,15 @@ SELECT name, AVG(cost) FROM newsPortal.Suscription_level GROUP BY name;
 SELECT Users_id, COUNT(*) FROM newsPortal.Comments GROUP BY Users_id;
 SELECT Articles_ID, COUNT(*) FROM newsPortal.Comments GROUP BY Articles_id;
 
-SELECT COUNT(*) FROM newsPortal.Users GROUP BY age HAVING age > 18;
-SELECT COUNT(*) FROM newsPortal.Articles GROUP BY author HAVING author = 1;
-SELECT AVG(age) FROM newsPortal.Users GROUP BY name HAVING name != 'Nicolas';
-SELECT MIN(age) FROM newsPortal.Users GROUP BY name HAVING age > 15;
-SELECT AVG(cost) FROM newsPortal.Suscription_level GROUP BY name HAVING cost > 0;
-SELECT COUNT(*) FROM newsPortal.Comments GROUP BY Users_id HAVING age < 60;
-SELECT COUNT(*) FROM newsPortal.Comments GROUP BY Articles_id HAVING Suscription_level_id = 2;
+SELECT age, COUNT(*) FROM newsPortal.Users GROUP BY age HAVING count > 1;
+SELECT author, COUNT(*) FROM newsPortal.Articles GROUP BY author HAVING MIN(author) = 1;
+SELECT name, AVG(age) FROM newsPortal.Users GROUP BY name HAVING MAX(age) < 35;
+SELECT name, MIN(age) FROM newsPortal.Users GROUP BY name HAVING MIN(age) > 15;
+SELECT AVG(cost) FROM newsPortal.Suscription_level GROUP BY name HAVING MIN(cost) > 0;
+SELECT last_name, COUNT(*) FROM newsPortal.Users GROUP BY last_name HAVING count > 1;
+SELECT COUNT(*) FROM newsPortal.Comments GROUP BY Articles_id HAVING MIN(Suscription_level_id) >= 2;
 
+-- Get all info
 SELECT * FROM newsPortal.Articles Art JOIN newsPortal.Articles_has_Tags AhT ON (Art.id = AhT.Articles_id)
 JOIN  newsPortal.Categories Cat ON (Art.Categories_id = Cat.id)
 JOIN newsPortal.Users U ON (Art.author = U.id)
