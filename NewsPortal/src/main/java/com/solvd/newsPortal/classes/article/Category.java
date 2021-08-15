@@ -1,12 +1,16 @@
 package com.solvd.newsPortal.classes.article;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.xml.bind.annotation.*;
 
 @XmlRootElement(name = "category")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Category {
+    @JsonProperty("id")
     @XmlAttribute(name = "id")
     private Long id;
+    @JsonProperty("name")
     @XmlElement(name = "name")
     private String name;
 

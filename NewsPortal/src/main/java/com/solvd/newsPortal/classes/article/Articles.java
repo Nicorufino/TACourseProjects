@@ -1,5 +1,7 @@
 package com.solvd.newsPortal.classes.article;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonRootName;
 import com.sun.xml.bind.XmlAccessorFactory;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -22,10 +24,11 @@ public class Articles {
         this.articleList = new ArrayList<Article>();
     }
 
+
     public Articles(ArrayList<Article> articleList) {
         this.articleList = articleList;
     }
-
+    @JsonProperty("article")
     public List<Article> getArticleList() {
         return articleList;
     }

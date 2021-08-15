@@ -1,31 +1,51 @@
 package com.solvd.newsPortal.main;
 
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 import com.mysql.cj.result.LocalDateTimeValueFactory;
 import com.solvd.newsPortal.classes.article.Article;
 import com.solvd.newsPortal.classes.article.Articles;
 import com.solvd.newsPortal.classes.article.Category;
 import com.solvd.newsPortal.classes.user.Suscription_level;
 import com.solvd.newsPortal.classes.user.User;
+import com.solvd.newsPortal.dom.Serializer;
 import org.apache.log4j.Logger;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 import javax.xml.validation.ValidatorHandler;
 import java.io.File;
+import java.io.IOException;
 import java.sql.Date;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.time.ZoneId;
 import java.time.chrono.ChronoLocalDate;
+import java.util.*;
+
+import static com.solvd.newsPortal.dom.Deserializer.deserialize;
 
 public class Runner {
     private final static Logger LOGGER = Logger.getLogger(Runner.class);
 
-    public final static void main(String[] args) throws JAXBException, SAXException {
+    public final static void main(String[] args) throws JAXBException, SAXException, ParserConfigurationException, IOException, ParseException {
         SchemaFactory schemaFactory = SchemaFactory.newInstance("http://www.w3.org/2001/XMLSchema");
         Schema schema = schemaFactory.newSchema(new File("src/main/resources/Articles.xsd"));
 
@@ -34,22 +54,42 @@ public class Runner {
         Unmarshaller um = jbc.createUnmarshaller();
         um.setSchema(schema);
         Articles unmarshalledArticles = (Articles) um.unmarshal(new File("src/main/resources/Articles.xml"));
-        LOGGER.debug(unmarshalledArticles.getArticleList().get(2).toString());
+        // LOGGER.debug(unmarshalledArticles.getArticleList().get(2).toString());
 
 
-        Article first = new Article(18L, "Marshalling with JaxB", LocalDate.of(2021, 8, 10), "body", new Suscription_level(7L, "test", 9.99F), new Category(99L,"test"), new User(255L, "Lorem", "Ipsum", 25, new Suscription_level(7L, "test", 9.99F)));
+        Article first = new Article(18L, "Marshalling with JaxB", LocalDate.of(2021, 8, 10), "body", new Suscription_level(7L, "test", 25F), new Category(70L, "test"), new User(255L, "Lorem", "Ipsum", 25, new Suscription_level(7L, "test", 9.99F)));
         Articles articlesToMarshall = new Articles();
         articlesToMarshall.getArticleList().add(first);
 
 
         Marshaller marshaller = jbc.createMarshaller();
         marshaller.setSchema(schema);
-        marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT,Boolean.TRUE);
+        marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
         marshaller.marshal(articlesToMarshall, new File("src/main/resources/Marshalled.xml"));
 
+        Articles articles = new Articles(deserialize(new File("src/main/resources/Articles.xml")));
+        //articles.getArticleList().stream().forEach(article -> LOGGER.debug(article));
+
+        Serializer serializer = new Serializer();
+        try {
+            serializer.serialize(first);
+        } catch (TransformerConfigurationException e) {
+            LOGGER.debug(e);
+        } catch (TransformerException e) {
+            LOGGER.debug(e);
+        }
+
+        ObjectMapper objectMapper = new ObjectMapper().enable(SerializationFeature.INDENT_OUTPUT);
+        objectMapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
+        Articles jsonArticles = objectMapper.readValue(new File("src/main/resources/Articles.json"), Articles.class);
+        jsonArticles.getArticleList().stream().forEach(article -> LOGGER.debug(article));
+
+        objectMapper.writeValue(new File("src/main/resources/Marshalled.json"), first);
 
     }
 }
+
+
     /*    Connection connection = ConnectionPool.getInstance().getConnection();
         try (PreparedStatement ps = connection.prepareStatement("SELECT * FROM newsPortal.Categories where id = 1;")) {
             try {
