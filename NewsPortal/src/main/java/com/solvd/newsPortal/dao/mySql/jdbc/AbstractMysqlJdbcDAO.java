@@ -46,7 +46,6 @@ public abstract class AbstractMysqlJdbcDAO<T> {
             ps.setLong(1, id);
             ResultSet rs = ps.executeQuery();
             rs.next();
-            LOGGER.debug(build(rs).toString());
 
             return build(rs);
 

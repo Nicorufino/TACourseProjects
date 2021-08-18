@@ -40,4 +40,12 @@ public class Comment {
     public void setArticle(Article article) {
         this.article = article;
     }
+
+    @Override
+    public String toString() {
+        return "Comment{" +
+                "id=" + id +
+                ", comment_text='" + comment_text + '\'' +
+                '}';
+    }
 }

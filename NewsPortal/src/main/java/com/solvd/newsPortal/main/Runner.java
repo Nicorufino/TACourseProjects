@@ -9,7 +9,12 @@ import com.solvd.newsPortal.classes.article.Articles;
 import com.solvd.newsPortal.classes.article.Category;
 import com.solvd.newsPortal.classes.user.Suscription_level;
 import com.solvd.newsPortal.classes.user.User;
+import com.solvd.newsPortal.connectionPool.ConnectionPool;
+import com.solvd.newsPortal.dao.mySql.jdbc.CategoryDAO;
 import com.solvd.newsPortal.dom.Serializer;
+import com.solvd.newsPortal.services.impl.ArticleService;
+import com.solvd.newsPortal.services.impl.CommentService;
+import com.solvd.newsPortal.services.impl.UserService;
 import org.apache.log4j.Logger;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -32,6 +37,7 @@ import javax.xml.validation.Validator;
 import javax.xml.validation.ValidatorHandler;
 import java.io.File;
 import java.io.IOException;
+import java.sql.*;
 import java.sql.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -46,6 +52,16 @@ public class Runner {
     private final static Logger LOGGER = Logger.getLogger(Runner.class);
 
     public final static void main(String[] args) throws JAXBException, SAXException, ParserConfigurationException, IOException, ParseException {
+/*
+        CommentService commentService = new CommentService();
+        LOGGER.debug(commentService.getCommentById(2L).toString());
+
+
+        UserService userService = new UserService();
+        LOGGER.debug(userService.getUserById(2L).toString());
+*/
+
+
         SchemaFactory schemaFactory = SchemaFactory.newInstance("http://www.w3.org/2001/XMLSchema");
         Schema schema = schemaFactory.newSchema(new File("src/main/resources/Articles.xsd"));
 
@@ -89,55 +105,3 @@ public class Runner {
     }
 }
 
-
-    /*    Connection connection = ConnectionPool.getInstance().getConnection();
-        try (PreparedStatement ps = connection.prepareStatement("SELECT * FROM newsPortal.Categories where id = 1;")) {
-            try {
-                ResultSet rs = ps.executeQuery();
-                rs.next();
-                LOGGER.debug("name: " + rs.getString("name"));
-
-            } catch (SQLException e) {
-                LOGGER.error(e);
-            }
-
-        } catch (SQLException throwables) {
-            LOGGER.error(throwables);
-        }
-
-        UserService userService = new UserService();
-        LOGGER.debug(userService.getUserById(2L).toString());
-    }
-
-    JAXBContext c;
-
-    {
-        try {
-            c = JAXBContext.newInstance(Article.class);
-        } catch (JAXBException e) {
-            LOGGER.error(e);
-        }
-    }
-
-    Unmarshaller um;
-
-    {
-        try {
-            um = c.createUnmarshaller();
-        } catch (JAXBException e) {
-            LOGGER.error(e);
-        }
-    }
-
-    Articles articles;
-
-    {
-        try {
-            articles = (Articles) um.unmarshal(new File("Articles.xml"));
-        } catch (JAXBException e) {
-            LOGGER.error(e);
-        }
-    LOGGER.debug(articles.toString());
-}
-}
-*/
