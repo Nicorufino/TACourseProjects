@@ -1,4 +1,4 @@
-package com.solvd.newsPortal.classes.article;
+package com.solvd.newsPortal.models.article;
 
 public class Location {
     private Long id;

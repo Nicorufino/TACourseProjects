@@ -1,9 +1,8 @@
 package com.solvd.newsPortal.dao.mySql.jdbc;
 
-import com.solvd.newsPortal.classes.article.Article;
-import com.solvd.newsPortal.classes.comment.Comment;
-import com.solvd.newsPortal.classes.user.User;
-import com.solvd.newsPortal.connectionPool.ConnectionPool;
+import com.solvd.newsPortal.models.article.Article;
+import com.solvd.newsPortal.models.comment.Comment;
+import com.solvd.newsPortal.models.user.User;
 import com.solvd.newsPortal.dao.ICommentDAO;
 import org.apache.log4j.Logger;
 

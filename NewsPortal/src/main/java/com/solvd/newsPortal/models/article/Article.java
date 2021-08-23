@@ -1,13 +1,11 @@
-package com.solvd.newsPortal.classes.article;
+package com.solvd.newsPortal.models.article;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonRootName;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.solvd.newsPortal.classes.user.Suscription_level;
-import com.solvd.newsPortal.classes.user.User;
+import com.solvd.newsPortal.models.user.Suscription_level;
+import com.solvd.newsPortal.models.user.User;
 import com.solvd.newsPortal.jackson.LocalDateDeserializer;
 import com.solvd.newsPortal.jackson.LocalDateSerializer;
 import com.solvd.newsPortal.jaxbAdapters.DateAdapter;

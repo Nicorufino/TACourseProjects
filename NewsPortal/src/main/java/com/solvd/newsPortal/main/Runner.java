@@ -3,48 +3,33 @@ package com.solvd.newsPortal.main;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
-import com.mysql.cj.result.LocalDateTimeValueFactory;
-import com.solvd.newsPortal.classes.article.Article;
-import com.solvd.newsPortal.classes.article.Articles;
-import com.solvd.newsPortal.classes.article.Category;
-import com.solvd.newsPortal.classes.user.Suscription_level;
-import com.solvd.newsPortal.classes.user.User;
-import com.solvd.newsPortal.connectionPool.ConnectionPool;
-import com.solvd.newsPortal.dao.mySql.jdbc.CategoryDAO;
+import com.solvd.newsPortal.dao.mySql.mybatis.ArticleDAO;
+import com.solvd.newsPortal.dao.mySql.mybatis.CommentDAO;
+import com.solvd.newsPortal.models.article.Article;
+import com.solvd.newsPortal.models.article.Articles;
+import com.solvd.newsPortal.models.article.Category;
+import com.solvd.newsPortal.models.comment.Comment;
+import com.solvd.newsPortal.models.user.Suscription_level;
+import com.solvd.newsPortal.models.user.User;
 import com.solvd.newsPortal.dom.Serializer;
+import com.solvd.newsPortal.services.IArticleService;
 import com.solvd.newsPortal.services.impl.ArticleService;
-import com.solvd.newsPortal.services.impl.CommentService;
-import com.solvd.newsPortal.services.impl.UserService;
 import org.apache.log4j.Logger;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerConfigurationException;
 import javax.xml.transform.TransformerException;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
-import javax.xml.validation.Validator;
-import javax.xml.validation.ValidatorHandler;
 import java.io.File;
 import java.io.IOException;
-import java.sql.*;
-import java.sql.Date;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.time.ZoneId;
-import java.time.chrono.ChronoLocalDate;
-import java.util.*;
 
 import static com.solvd.newsPortal.dom.Deserializer.deserialize;
 
@@ -62,7 +47,7 @@ public class Runner {
 */
 
 
-        SchemaFactory schemaFactory = SchemaFactory.newInstance("http://www.w3.org/2001/XMLSchema");
+/*        SchemaFactory schemaFactory = SchemaFactory.newInstance("http://www.w3.org/2001/XMLSchema");
         Schema schema = schemaFactory.newSchema(new File("src/main/resources/Articles.xsd"));
 
 
@@ -101,6 +86,9 @@ public class Runner {
         jsonArticles.getArticleList().stream().forEach(article -> LOGGER.debug(article));
 
         objectMapper.writeValue(new File("src/main/resources/Marshalled.json"), first);
+*/
+        ArticleService articleService = new ArticleService();
+        LOGGER.debug(articleService.getArticleById(11L));
 
     }
 }

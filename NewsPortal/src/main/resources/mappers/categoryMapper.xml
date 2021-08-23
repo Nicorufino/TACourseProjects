@@ -1,0 +1,26 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.solvd.newsPortal.dao.ICategoryDAO">
+    <insert id="createItem" useGeneratedKeys="true" keyProperty="id">
+        <![CDATA[INSERT INTO `newsPortal`.`Categories` (`name`) VALUES (${item.name});]]>
+    </insert>
+
+    <update id="updateItem">
+        <![CDATA[UPDATE `newsPortal`.`Categories` SET `name` = ${item.name} WHERE (`id` = ${id});]]>
+    </update>
+
+    <delete id="deleteById">
+        <![CDATA[DELETE FROM `newsPortal`.`Categories` WHERE (`id` = 1);]]>
+    </delete>
+
+    <select id="getItemById" resultMap="categoryResultMap">
+        <![CDATA[SELECT * FROM newsPortal.Categories where id = ${id};]]>
+    </select>
+
+    <resultMap type="com.solvd.newsPortal.models.article.Category" id="categoryResultMap" autoMapping="false">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+    </resultMap>
+</mapper>

@@ -1,7 +1,6 @@
 package com.solvd.newsPortal.dao.mySql.jdbc;
 
-import com.solvd.newsPortal.classes.tag.Tag;
-import com.solvd.newsPortal.connectionPool.ConnectionPool;
+import com.solvd.newsPortal.models.tag.Tag;
 import com.solvd.newsPortal.dao.ITagDAO;
 import org.apache.log4j.Logger;
 

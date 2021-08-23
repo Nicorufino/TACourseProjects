@@ -1,0 +1,31 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.solvd.newsPortal.dao.IUserDAO">
+    <insert id="createItem" useGeneratedKeys="true" keyProperty="id">
+        <![CDATA[INSERT INTO `newsPortal`.`Users` (`name`, `last_name`, `age`,
+         `Suscription_level_id`) VALUES (${name}, ${lastName}, ${age}, ${suscription_level.id});]]>
+    </insert>
+
+    <update id="updateItem">
+        <![CDATA[UPDATE `newsPortal`.`Users` SET `name` = ${name}, `last_name` = ${lastName},
+         `age` = ${age}, `Suscription_level_id` = ${suscription_level.id} WHERE (`id` = ${id});]]>
+    </update>
+
+    <delete id="deleteById">
+        <![CDATA[DELETE FROM `newsPortal`.`Users` WHERE (`id` = ${id});]]>
+    </delete>
+
+    <select id="getItemById" resultMap="userResultMap">
+        <![CDATA[SELECT * FROM newsPortal.Users WHERE id = ${id};]]>
+    </select>
+
+    <resultMap type="com.solvd.newsPortal.models.user.User" id="userResultMap" autoMapping="false">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="last_name" property="lastName"/>
+        <result column="age" property="age"/>
+        <association property="suscription_level" javaType="com.solvd.newsPortal.models.user.Suscription_level" select="com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById" column="Suscription_level_id"/>
+    </resultMap>
+</mapper>

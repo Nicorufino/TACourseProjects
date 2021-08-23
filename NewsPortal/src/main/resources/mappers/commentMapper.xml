@@ -1,0 +1,29 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.solvd.newsPortal.dao.ICommentDAO">
+    <insert id="createItem" useGeneratedKeys="true" keyProperty="id">
+
+        <![CDATA[INSERT INTO `newsPortal`.`Comments` (`comment_text`, `Users_id`, `Articles_id`) VALUES ('${comment_text}', '${user}', '${article})';]]>
+    </insert>
+
+    <update id="updateItem">
+        <![CDATA[UPDATE `newsPortal`.`Comments` SET `comment_text` = ${comment_text}, `Users_id` = ${user.id}, `Articles_id` = ${article.id} WHERE (`id` = ${id});]]>
+    </update>
+
+    <delete id="deleteById">
+        <![CDATA[DELETE FROM `newsPortal`.`Comments` WHERE (`id` = ${id});]]>
+    </delete>
+
+    <select id="getItemById" resultMap="commentResultMap">
+        <![CDATA[SELECT * FROM newsPortal.Comments WHERE id = ${id};]]>
+    </select>
+
+    <resultMap type="com.solvd.newsPortal.models.comment.Comment" id="commentResultMap" autoMapping="false">
+        <id column="id" property="id"/>
+        <result column="comment_text" property="comment_text"/>
+        <association property="user" column="Users_id" javaType="com.solvd.newsPortal.models.user.User" select="com.solvd.newsPortal.dao.IUserDAO.getItemById"/>
+        <association property="article" javaType="com.solvd.newsPortal.models.article.Article" select="com.solvd.newsPortal.dao.IArticleDAO.getItemById" column="Articles_id"/>
+    </resultMap>
+</mapper>

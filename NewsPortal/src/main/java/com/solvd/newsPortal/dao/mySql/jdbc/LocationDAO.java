@@ -1,7 +1,6 @@
 package com.solvd.newsPortal.dao.mySql.jdbc;
 
-import com.solvd.newsPortal.connectionPool.ConnectionPool;
-import com.solvd.newsPortal.classes.article.Location;
+import com.solvd.newsPortal.models.article.Location;
 import com.solvd.newsPortal.dao.ILocationDAO;
 import org.apache.log4j.Logger;
 

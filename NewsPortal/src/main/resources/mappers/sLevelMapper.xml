@@ -1,0 +1,27 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.solvd.newsPortal.dao.ISuscription_levelDAO">
+    <insert id="createItem" useGeneratedKeys="true" keyProperty="id">
+        <![CDATA[INSERT INTO `newsPortal`.`Suscription_level` (`name`, `cost`) VALUES (${name}, ${cost});]]>
+    </insert>
+
+    <update id="updateItem">
+        <![CDATA[UPDATE `newsPortal`.`Suscription_level` SET `name` = ${name}, `cost` = ${cost} WHERE (`id` = ${id});]]>
+    </update>
+
+    <delete id="deleteById">
+        <![CDATA[DELETE FROM `newsPortal`.`Suscription_level` WHERE (`id` = ${id});]]>
+    </delete>
+
+    <select id="getItemById" resultMap="slResultMap">
+        <![CDATA[SELECT * FROM newsPortal.Suscription_level WHERE id = ${id};]]>
+    </select>
+
+    <resultMap type="com.solvd.newsPortal.models.user.Suscription_level" id="slResultMap" autoMapping="false">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="cost" property="cost"/>
+    </resultMap>
+</mapper>

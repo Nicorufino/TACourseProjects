@@ -45,7 +45,7 @@ public class ConnectionPool {
             } catch (IOException e) {
                 LOGGER.error(e);
             }
-            instance = new ConnectionPool(Integer.parseInt(properties.getProperty("ConnectionPool.maxConnections")), properties.getProperty("ConnectionPool.url"), properties.getProperty("ConnectionPool.dbName"), properties.getProperty("ConnectionPool.user"), properties.getProperty("ConnectionPool.password"));
+            instance = new ConnectionPool(5, properties.getProperty("db.url"), properties.getProperty("db.name"), properties.getProperty("db.user"), properties.getProperty("db.password"));
             LOGGER.debug("connections created");
 
         }
@@ -59,9 +59,9 @@ public class ConnectionPool {
         Connection connection = connectionStack.pop().orElse(null);
         if (connection == null)
             try {
-                connection = DriverManager.getConnection("jdbc:mysql://" + url + "/" + dbName, user, password);
+                connection = DriverManager.getConnection(url, user, password);
             } catch (SQLException e){
-                LOGGER.error("Error getting database connection from " + url + "\n" + e);
+                LOGGER.error(e);
             }
 
         return connection;
@@ -84,7 +84,7 @@ public class ConnectionPool {
                 if (connection != null) connection.close();
             }
         } catch (SQLException e){
-            LOGGER.error("Error closing connection: " + e);
+            LOGGER.error(e);
         }
     }
 

@@ -1,11 +1,9 @@
 package com.solvd.newsPortal.dom;
 
-import com.solvd.newsPortal.classes.article.Article;
-import org.w3c.dom.Attr;
+import com.solvd.newsPortal.models.article.Article;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
-import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.*;
@@ -69,7 +67,7 @@ public class Serializer {
         author.appendChild(firstName);
 
         Element lastname = document.createElement("lastname");
-        lastname.appendChild(document.createTextNode(article.getAuthor().getLast_name()));
+        lastname.appendChild(document.createTextNode(article.getAuthor().getLastName()));
         author.appendChild(lastname);
 
         Element autSL = document.createElement("suscriptionLevel");

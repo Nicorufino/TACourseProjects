@@ -1,4 +1,4 @@
-package com.solvd.newsPortal.classes.tag;
+package com.solvd.newsPortal.models.tag;
 
 public class Tag {
     private Long id;

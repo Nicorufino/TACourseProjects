@@ -1,7 +1,7 @@
-package com.solvd.newsPortal.classes.comment;
+package com.solvd.newsPortal.models.comment;
 
-import com.solvd.newsPortal.classes.article.Article;
-import com.solvd.newsPortal.classes.user.User;
+import com.solvd.newsPortal.models.article.Article;
+import com.solvd.newsPortal.models.user.User;
 
 public class Comment {
     private Long id;

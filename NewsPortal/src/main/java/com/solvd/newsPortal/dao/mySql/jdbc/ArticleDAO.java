@@ -1,10 +1,9 @@
 package com.solvd.newsPortal.dao.mySql.jdbc;
 
-import com.solvd.newsPortal.classes.article.Article;
-import com.solvd.newsPortal.classes.article.Category;
-import com.solvd.newsPortal.classes.user.Suscription_level;
-import com.solvd.newsPortal.classes.user.User;
-import com.solvd.newsPortal.connectionPool.ConnectionPool;
+import com.solvd.newsPortal.models.article.Article;
+import com.solvd.newsPortal.models.article.Category;
+import com.solvd.newsPortal.models.user.Suscription_level;
+import com.solvd.newsPortal.models.user.User;
 import com.solvd.newsPortal.dao.IArticleDAO;
 import org.apache.log4j.Logger;
 
@@ -13,7 +12,7 @@ import java.sql.*;
 public class ArticleDAO extends AbstractMysqlJdbcDAO<Article> implements IArticleDAO {
     private final static Logger LOGGER = Logger.getLogger(ArticleDAO.class);
     private final static String CREATE ="INSERT INTO `newsPortal`.`Articles` (`name`, `date`, `body`, VALUES (?, ?, ?, ?, ?, ?);";
-    private final static String GET = "SELECT * FROM `newsPortal`.`Articles` WHERE id = ?";
+    private final static String GET = "SELECT * FROM `newsPortal`.`Articles` WHERE id = ?;";
     private final static String UPDATE = "UPDATE `newsPortal`.`Articles` SET `name` = ?, `date` = ?, `body` = ?, `Suscription_level_id` = ?, `Categories_id` = ?, `author` = ? WHERE (`id` = ?);";
     private final static String DELETE = "DELETE FROM `newsPortal`.`Articles` WHERE (`id` = ?);";
 

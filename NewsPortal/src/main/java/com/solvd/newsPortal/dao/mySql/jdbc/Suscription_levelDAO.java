@@ -1,7 +1,6 @@
 package com.solvd.newsPortal.dao.mySql.jdbc;
 
-import com.solvd.newsPortal.connectionPool.ConnectionPool;
-import com.solvd.newsPortal.classes.user.Suscription_level;
+import com.solvd.newsPortal.models.user.Suscription_level;
 import com.solvd.newsPortal.dao.ISuscription_levelDAO;
 import org.apache.log4j.Logger;
 

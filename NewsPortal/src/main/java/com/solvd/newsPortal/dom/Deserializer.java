@@ -1,18 +1,15 @@
 package com.solvd.newsPortal.dom;
 
-import com.solvd.newsPortal.classes.article.Article;
-import com.solvd.newsPortal.classes.article.Articles;
-import com.solvd.newsPortal.classes.article.Category;
-import com.solvd.newsPortal.classes.user.Suscription_level;
-import com.solvd.newsPortal.classes.user.User;
+import com.solvd.newsPortal.models.article.Article;
+import com.solvd.newsPortal.models.article.Category;
+import com.solvd.newsPortal.models.user.Suscription_level;
+import com.solvd.newsPortal.models.user.User;
 import org.apache.log4j.Logger;
-import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
@@ -25,7 +22,6 @@ import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
-import java.util.List;
 
 public class Deserializer {
     private final static Logger LOGGER = Logger.getLogger(Deserializer.class);

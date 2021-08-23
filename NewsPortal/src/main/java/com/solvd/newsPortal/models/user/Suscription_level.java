@@ -1,29 +1,33 @@
-package com.solvd.newsPortal.classes.article;
+package com.solvd.newsPortal.models.user;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import javax.xml.bind.annotation.*;
 
-@XmlRootElement(name = "category")
+@XmlRootElement(name = "suscriptionLevel")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Category {
+public class Suscription_level {
     @JsonProperty("id")
     @XmlAttribute(name = "id")
     private Long id;
     @JsonProperty("name")
     @XmlElement(name = "name")
     private String name;
+    @JsonProperty("cost")
+    @XmlElement(name = "cost")
+    private Float cost;
 
-    public Category() {
+    public Suscription_level() {
     }
 
-    public Category(Long id) {
+    public Suscription_level(Long id) {
         this.id = id;
     }
 
-    public Category(Long id, String name) {
+    public Suscription_level(Long id, String name, Float cost) {
         this.id = id;
         this.name = name;
+        this.cost = cost;
     }
 
     public Long getId() {
@@ -42,11 +46,20 @@ public class Category {
         this.name = name;
     }
 
+    public float getCost() {
+        return cost;
+    }
+
+    public void setCost(float cost) {
+        this.cost = cost;
+    }
+
     @Override
     public String toString() {
-        return "Category{" +
+        return "Suscription_level{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", cost=" + cost +
                 '}';
     }
 }

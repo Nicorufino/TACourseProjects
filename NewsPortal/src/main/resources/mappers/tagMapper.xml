@@ -1,0 +1,26 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.solvd.newsPortal.dao.ITagDAO">
+    <insert id="createItem" useGeneratedKeys="true" keyProperty="id">
+        <![CDATA[INSERT INTO `newsPortal`.`Tags` (`name`) VALUES (#{name});]]>
+    </insert>
+
+    <update id="updateItem">
+        <![CDATA[UPDATE `newsPortal`.`Tags` SET `name` = ${name} WHERE (`id` = ${id});]]>
+    </update>
+
+    <delete id="deleteById">
+        <![CDATA[DELETE FROM `newsPortal`.`Tags` WHERE (`id` = ${id});]]>
+    </delete>
+
+    <select id="getItemById" resultMap="tagResultMap">
+        <![CDATA[SELECT * FROM newsPortal.Tags WHERE id = ${id};]]>
+    </select>
+
+    <resultMap type="com.solvd.newsPortal.models.tag.Tag" id="tagResultMap" autoMapping="false">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+    </resultMap>
+</mapper>
