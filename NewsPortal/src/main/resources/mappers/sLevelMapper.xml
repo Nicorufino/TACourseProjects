@@ -4,11 +4,11 @@
 
 <mapper namespace="com.solvd.newsPortal.dao.ISuscription_levelDAO">
     <insert id="createItem" useGeneratedKeys="true" keyProperty="id">
-        <![CDATA[INSERT INTO `newsPortal`.`Suscription_level` (`name`, `cost`) VALUES (${name}, ${cost});]]>
+        <![CDATA[INSERT INTO `newsPortal`.`Suscription_level` (`name`, `cost`) VALUES ("${name}", ${cost});]]>
     </insert>
 
     <update id="updateItem">
-        <![CDATA[UPDATE `newsPortal`.`Suscription_level` SET `name` = ${name}, `cost` = ${cost} WHERE (`id` = ${id});]]>
+        <![CDATA[UPDATE `newsPortal`.`Suscription_level` SET `name` = "$"{name}", `cost` = ${cost} WHERE (`id` = ${id});]]>
     </update>
 
     <delete id="deleteById">

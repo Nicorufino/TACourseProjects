@@ -4,15 +4,15 @@
 
 <mapper namespace="com.solvd.newsPortal.dao.ICategoryDAO">
     <insert id="createItem" useGeneratedKeys="true" keyProperty="id">
-        <![CDATA[INSERT INTO `newsPortal`.`Categories` (`name`) VALUES (${item.name});]]>
+        <![CDATA[INSERT INTO `newsPortal`.`Categories` (`name`) VALUES ("${name}");]]>
     </insert>
 
     <update id="updateItem">
-        <![CDATA[UPDATE `newsPortal`.`Categories` SET `name` = ${item.name} WHERE (`id` = ${id});]]>
+        <![CDATA[UPDATE `newsPortal`.`Categories` SET `name` = "${name}" WHERE (`id` = ${id});]]>
     </update>
 
     <delete id="deleteById">
-        <![CDATA[DELETE FROM `newsPortal`.`Categories` WHERE (`id` = 1);]]>
+        <![CDATA[DELETE FROM `newsPortal`.`Categories` WHERE (`id` = ${id});]]>
     </delete>
 
     <select id="getItemById" resultMap="categoryResultMap">

@@ -5,10 +5,13 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.solvd.newsPortal.dao.mySql.mybatis.ArticleDAO;
 import com.solvd.newsPortal.dao.mySql.mybatis.CommentDAO;
+import com.solvd.newsPortal.dao.mySql.mybatis.TagDAO;
 import com.solvd.newsPortal.models.article.Article;
 import com.solvd.newsPortal.models.article.Articles;
 import com.solvd.newsPortal.models.article.Category;
+import com.solvd.newsPortal.models.article.Location;
 import com.solvd.newsPortal.models.comment.Comment;
+import com.solvd.newsPortal.models.tag.Tag;
 import com.solvd.newsPortal.models.user.Suscription_level;
 import com.solvd.newsPortal.models.user.User;
 import com.solvd.newsPortal.dom.Serializer;
@@ -37,17 +40,11 @@ public class Runner {
     private final static Logger LOGGER = Logger.getLogger(Runner.class);
 
     public final static void main(String[] args) throws JAXBException, SAXException, ParserConfigurationException, IOException, ParseException {
-/*
-        CommentService commentService = new CommentService();
-        LOGGER.debug(commentService.getCommentById(2L).toString());
 
 
-        UserService userService = new UserService();
-        LOGGER.debug(userService.getUserById(2L).toString());
-*/
 
 
-/*        SchemaFactory schemaFactory = SchemaFactory.newInstance("http://www.w3.org/2001/XMLSchema");
+        SchemaFactory schemaFactory = SchemaFactory.newInstance("http://www.w3.org/2001/XMLSchema");
         Schema schema = schemaFactory.newSchema(new File("src/main/resources/Articles.xsd"));
 
 
@@ -86,10 +83,11 @@ public class Runner {
         jsonArticles.getArticleList().stream().forEach(article -> LOGGER.debug(article));
 
         objectMapper.writeValue(new File("src/main/resources/Marshalled.json"), first);
-*/
-        ArticleService articleService = new ArticleService();
-        LOGGER.debug(articleService.getArticleById(11L));
 
+       ArticleService articleService = new ArticleService();
+       LOGGER.debug(articleService.getArticleById(11L));
+       CommentDAO commentDAO = new CommentDAO();
+       commentDAO.createItem(commentDAO.getItemById(2L));
     }
 }
 

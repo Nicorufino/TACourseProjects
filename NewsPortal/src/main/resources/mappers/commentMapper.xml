@@ -5,7 +5,7 @@
 <mapper namespace="com.solvd.newsPortal.dao.ICommentDAO">
     <insert id="createItem" useGeneratedKeys="true" keyProperty="id">
 
-        <![CDATA[INSERT INTO `newsPortal`.`Comments` (`comment_text`, `Users_id`, `Articles_id`) VALUES ('${comment_text}', '${user}', '${article})';]]>
+        <![CDATA[INSERT INTO `newsPortal`.`Comments` (`comment_text`, `Users_id`, `Articles_id`) VALUES ('${comment_text}', '${user.id}', '${article.id}');]]>
     </insert>
 
     <update id="updateItem">

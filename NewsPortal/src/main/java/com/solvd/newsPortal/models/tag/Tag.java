@@ -4,6 +4,13 @@ public class Tag {
     private Long id;
     private String name;
 
+    public Tag() {
+    }
+
+    public Tag(String name) {
+        this.name = name;
+    }
+
     public Long getId() {
         return id;
     }

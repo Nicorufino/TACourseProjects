@@ -4,11 +4,11 @@
 
 <mapper namespace="com.solvd.newsPortal.dao.ILocationDAO">
     <insert id="createItem" useGeneratedKeys="true" keyProperty="id">
-        <![CDATA[INSERT INTO `newsPortal`.`Location` (`name`) VALUES (${name});]]>
+        <![CDATA[INSERT INTO `newsPortal`.`Location` (`name`) VALUES ("${name}");]]>
     </insert>
 
     <update id="updateItem">
-        <![CDATA[UPDATE `newsPortal`.`Location` SET `name` = ${name} WHERE (`id` = ${id});]]>
+        <![CDATA[UPDATE `newsPortal`.`Location` SET `name` = "${name}" WHERE (`id` = ${id});]]>
     </update>
 
     <delete id="deleteById">

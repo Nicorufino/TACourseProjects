@@ -20,7 +20,7 @@ public class TagDAO extends AbstractMysqlMybatisDAO<Tag> implements ITagDAO {
     private Reader r = Resources.getResourceAsReader("mybatis-config.xml");
     private SqlSessionFactory ssf = new SqlSessionFactoryBuilder().build(r);
     private SqlSession session = ssf.openSession();
-    private ITagDAO tagDAO = session.getMapper(TagDAO.class);
+    private ITagDAO tagDAO = session.getMapper(ITagDAO.class);
 
 
     public TagDAO() throws IOException {
