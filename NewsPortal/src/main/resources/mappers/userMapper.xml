@@ -26,6 +26,6 @@
         <result column="name" property="name"/>
         <result column="last_name" property="lastName"/>
         <result column="age" property="age"/>
-        <association property="suscription_level" javaType="com.solvd.newsPortal.models.user.Suscription_level" select="com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById" column="Suscription_level_id"/>
+        <association property="suscription_level" resultMap="com.solvd.newsPortal.dao.ISuscription_levelDAO.slResultMap"/>
     </resultMap>
 </mapper>

@@ -2281,3 +2281,108 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG com.solvd.newsPortal.dao.ICommentDAO.createItem  - ==>  Preparing: INSERT INTO `newsPortal`.`Comments` (`comment_text`, `Users_id`, `Articles_id`) VALUES ('comment', '2', '11');
 [main] DEBUG com.solvd.newsPortal.dao.ICommentDAO.createItem  - ==> Parameters: 
 [main] DEBUG com.solvd.newsPortal.dao.ICommentDAO.createItem  - <==    Updates: 1
+[main] DEBUG org.apache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 1280641161.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4c550889]
+[main] DEBUG com.solvd.newsPortal.dao.ICommentDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Comments WHERE id = 2;
+[main] DEBUG com.solvd.newsPortal.dao.ICommentDAO.getItemById  - ==> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ====>  Preparing: SELECT * FROM `newsPortal`.`Articles` WHERE id = 11;
+[main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ====> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <======      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Categories where id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ======> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - <======      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Users WHERE id = 3;
+[main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ======> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - <======      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - <====      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ICommentDAO.getItemById  - <==      Total: 1
+[main] DEBUG com.solvd.newsPortal.main.Runner  - Comment{id=2, comment_text='comment'}
+[main] DEBUG org.apache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 888611662.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@34f7234e]
+[main] DEBUG com.solvd.newsPortal.dao.ICommentDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Comments WHERE id = 2;
+[main] DEBUG com.solvd.newsPortal.dao.ICommentDAO.getItemById  - ==> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ====>  Preparing: SELECT * FROM `newsPortal`.`Articles` WHERE id = 11;
+[main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ====> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <======      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Categories where id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ======> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - <======      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Users WHERE id = 3;
+[main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ======> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - <======      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - <====      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ICommentDAO.getItemById  - <==      Total: 1
+[main] DEBUG com.solvd.newsPortal.main.Runner  - Comment{id=2, comment_text='comment', user=User{id=2, name='null', last_name='null', age=null, suscription_level=null}, article=Article{id=11, name='testing', date=2021-08-11, body='body', suscription_level=Suscription_level{id=1, name='Free', cost=0.0}, category=Category{id=1, name='name test'}, author=User{id=3, name='John', last_name='Smith', age=32, suscription_level=Suscription_level{id=1, name='Free', cost=0.0}}}}
+[main] DEBUG org.apache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 888611662.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@34f7234e]
+[main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ==>  Preparing: SELECT * FROM `newsPortal`.`Articles` WHERE id = 11;
+[main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ==> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ====> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <====      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Categories where id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ====> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - <====      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Users WHERE id = 3;
+[main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ====> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - <====      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - <==      Total: 1
+[main] DEBUG com.solvd.newsPortal.main.Runner  - Article{id=11, name='testing', date=2021-08-11, body='body', author=User{id=3, name='John', last_name='Smith', age=32, suscription_level=Suscription_level{id=1, name='Free', cost=0.0}}}
+[main] DEBUG org.apache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 1155769010.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@44e3a2b2]
+[main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ==>  Preparing: SELECT * FROM `newsPortal`.`Articles` WHERE id = 11;
+[main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ==> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ====> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <====      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Categories where id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ====> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - <====      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - <==      Total: 1
+[main] DEBUG com.solvd.newsPortal.main.Runner  - Article{id=11, name='testing', date=2021-08-11, body='body', author=User{id=11, name='testing', last_name='null', age=null, suscription_level=Suscription_level{id=1, name='Free', cost=0.0}}}
+[main] DEBUG org.apache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 888611662.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@34f7234e]
+[main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ==>  Preparing: SELECT * FROM `newsPortal`.`Articles` WHERE id = 11;
+[main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ==> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ====> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <====      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Categories where id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ====> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - <====      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - <==      Total: 1
+[main] DEBUG com.solvd.newsPortal.main.Runner  - Article{id=11, name='testing', date=2021-08-11, body='body', author=User{id=11, name='testing', last_name='null', age=null, suscription_level=Suscription_level{id=1, name='Free', cost=0.0}}}

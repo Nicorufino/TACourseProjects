@@ -27,9 +27,9 @@
         <result column="name" property="name"/>
         <result column="date" property="date"/>
         <result column="body" property="body"/>
-        <association property="suscription_level" column="Suscription_level_id" javaType="com.solvd.newsPortal.models.user.Suscription_level" select="com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById"/>
-        <association property="category" column="Categories_id" javaType="com.solvd.newsPortal.models.article.Category" select="com.solvd.newsPortal.dao.ICategoryDAO.getItemById"/>
-        <association property="author" column="author" javaType="com.solvd.newsPortal.models.user.User" select="com.solvd.newsPortal.dao.IUserDAO.getItemById"/>
+        <association property="suscription_level" resultMap="com.solvd.newsPortal.dao.ISuscription_levelDAO.slResultMap"/>
+        <association property="category" resultMap="com.solvd.newsPortal.dao.ICategoryDAO.categoryResultMap"/>
+        <association property="author" resultMap="com.solvd.newsPortal.dao.IUserDAO.userResultMap"/>
     </resultMap>
 
 </mapper>

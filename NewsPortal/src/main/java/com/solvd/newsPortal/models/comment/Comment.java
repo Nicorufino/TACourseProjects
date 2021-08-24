@@ -46,6 +46,8 @@ public class Comment {
         return "Comment{" +
                 "id=" + id +
                 ", comment_text='" + comment_text + '\'' +
+                ", user=" + user +
+                ", article=" + article +
                 '}';
     }
 }

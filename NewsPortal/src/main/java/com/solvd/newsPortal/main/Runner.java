@@ -42,7 +42,7 @@ public class Runner {
     public final static void main(String[] args) throws JAXBException, SAXException, ParserConfigurationException, IOException, ParseException {
 
 
-
+/*
 
         SchemaFactory schemaFactory = SchemaFactory.newInstance("http://www.w3.org/2001/XMLSchema");
         Schema schema = schemaFactory.newSchema(new File("src/main/resources/Articles.xsd"));
@@ -83,11 +83,9 @@ public class Runner {
         jsonArticles.getArticleList().stream().forEach(article -> LOGGER.debug(article));
 
         objectMapper.writeValue(new File("src/main/resources/Marshalled.json"), first);
-
-       ArticleService articleService = new ArticleService();
-       LOGGER.debug(articleService.getArticleById(11L));
-       CommentDAO commentDAO = new CommentDAO();
-       commentDAO.createItem(commentDAO.getItemById(2L));
+        */
+        ArticleDAO dao = new ArticleDAO();
+        LOGGER.debug(dao.getItemById(11l));
     }
 }
 

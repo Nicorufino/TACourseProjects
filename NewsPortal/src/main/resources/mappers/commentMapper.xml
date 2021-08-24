@@ -23,7 +23,7 @@
     <resultMap type="com.solvd.newsPortal.models.comment.Comment" id="commentResultMap" autoMapping="false">
         <id column="id" property="id"/>
         <result column="comment_text" property="comment_text"/>
-        <association property="user" column="Users_id" javaType="com.solvd.newsPortal.models.user.User" select="com.solvd.newsPortal.dao.IUserDAO.getItemById"/>
-        <association property="article" javaType="com.solvd.newsPortal.models.article.Article" select="com.solvd.newsPortal.dao.IArticleDAO.getItemById" column="Articles_id"/>
+        <association property="user"  resultMap="com.solvd.newsPortal.dao.IUserDAO.userResultMap"/>
+        <association property="article" resultMap="com.solvd.newsPortal.dao.IArticleDAO.articleResultMap"/>
     </resultMap>
 </mapper>
