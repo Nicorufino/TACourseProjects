@@ -11,25 +11,25 @@ import java.sql.Connection;
 public abstract class AbstractMysqlMybatisDAO <T> {
     private final static Logger LOGGER = Logger.getLogger(AbstractMysqlMybatisDAO.class);
 
-    public void createItem(T item, IBaseDAO<T> dao, SqlSession session){
+    public void createItem(T item, IBaseDAO<T> dao){
         dao.createItem(item);
-        session.close();
+       
     }
 
-    public T getItemById(Long id, IBaseDAO<T> dao, SqlSession session){
+    public T getItemById(Long id, IBaseDAO<T> dao){
         T result = dao.getItemById(id);
-        session.close();
+        
         return result;
     }
 
-    public void updateItem(T item, Long id, IBaseDAO<T> dao, SqlSession session){
+    public void updateItem(T item, Long id, IBaseDAO<T> dao){
         dao.updateItem(item, id);
-        session.close();
+        
     }
 
-    public void deleteById(Long id, IBaseDAO<T> dao, SqlSession session){
+    public void deleteById(Long id, IBaseDAO<T> dao){
         dao.deleteById(id);
-        session.close();
+        
 
     }
 

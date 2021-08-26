@@ -1,17 +1,14 @@
-package com.solvd.newsPortal.dao.mySql.mybatis;
+package com.solvd.newsPortal.dao.mySql.mybatis.utils;
 
-import com.mysql.cj.Session;
-import com.solvd.newsPortal.connectionPool.ConnectionPool;
 import com.solvd.newsPortal.dao.IBaseDAO;
 import org.apache.ibatis.io.Resources;
-import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.apache.log4j.Logger;
 
 import java.io.IOException;
 import java.io.Reader;
-import java.sql.Connection;
+import java.lang.reflect.Proxy;
 
 public class MybatisUtil {
     private final static Logger LOGGER = Logger.getLogger(MybatisUtil.class);
@@ -26,10 +23,14 @@ public class MybatisUtil {
     private static SqlSessionFactory ssf = new SqlSessionFactoryBuilder().build(r);
 
 
-    public static SqlSession getSession(){
-        return ssf.openSession();
-
+    public static SqlSessionFactory getSSF(){
+        return ssf;
     }
 
+    public static <T extends IBaseDAO<?>> T getIDao(Class<T> iClass) {
+        Object o = Proxy.newProxyInstance(iClass.getClassLoader(), new Class[]{iClass}, new MybatisMapperHandler());
 
+        return iClass.cast(o);
+
+    }
 }

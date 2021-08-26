@@ -1,46 +1,34 @@
 package com.solvd.newsPortal.dao.mySql.mybatis;
 
 import com.solvd.newsPortal.dao.ICategoryDAO;
-import com.solvd.newsPortal.dao.mySql.jdbc.AbstractMysqlJdbcDAO;
+import com.solvd.newsPortal.dao.mySql.mybatis.utils.MybatisUtil;
 import com.solvd.newsPortal.models.article.Category;
-import org.apache.ibatis.io.Resources;
-import org.apache.ibatis.session.SqlSession;
-import org.apache.ibatis.session.SqlSessionFactory;
-import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.apache.log4j.Logger;
-
-import java.io.IOException;
-import java.io.Reader;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 
 public class CategoryDAO extends AbstractMysqlMybatisDAO<Category> implements ICategoryDAO {
     private final static Logger LOGGER = Logger.getLogger(CategoryDAO.class);
-    private SqlSession session = MybatisUtil.getSession();
-    private ICategoryDAO categoryDAO = session.getMapper(ICategoryDAO.class);
+    private ICategoryDAO dao = MybatisUtil.getIDao(ICategoryDAO.class);
 
-    public CategoryDAO() throws IOException {
-    }
+   
 
 
     @Override
-    public void createItem(Category item) { createItem(item, categoryDAO, session);
+    public void createItem(Category item) { createItem(item, dao);
     }
 
     @Override
     public Category getItemById(Long id) {
-        return getItemById(id, categoryDAO, session);
+        return getItemById(id, dao);
     }
 
     @Override
     public void updateItem(Category item, Long id) {
-        updateItem(item, id, categoryDAO, session);
+        updateItem(item, id, dao);
     }
 
     @Override
     public void deleteById(Long id) {
-        deleteById(id, categoryDAO, session);
+        deleteById(id, dao);
     }
 }
 

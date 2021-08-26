@@ -3182,3 +3182,73 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6f603e89]
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 1868578441 to pool.
 [main] DEBUG com.solvd.newsPortal.main.Runner  - {id=2, name='Nicolás', last_name='Rufino', age=19, suscription_level={id=2, name='Plus', cost=10.0}}
+[main] DEBUG org.apache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 649769713.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@26bab2f1]
+[main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ==>  Preparing: SELECT id, name, date, body, Suscription_level_id as sl_id, Categories_id as cat_id, author as author_id FROM `newsPortal`.`Articles` WHERE id = 11;
+[main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ==> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - <==      Total: 1
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@26bab2f1]
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@26bab2f1]
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 649769713 to pool.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Checked out connection 649769713 from pool.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@26bab2f1]
+[main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ==>  Preparing: SELECT id, name, last_name, age, Suscription_level_id as sl_id FROM newsPortal.Users WHERE id = 3;
+[main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ==> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - <==      Total: 1
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@26bab2f1]
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@26bab2f1]
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 649769713 to pool.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Checked out connection 649769713 from pool.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@26bab2f1]
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 1
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@26bab2f1]
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@26bab2f1]
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 649769713 to pool.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Checked out connection 649769713 from pool.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@26bab2f1]
+[main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Categories where id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ==> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - <==      Total: 1
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@26bab2f1]
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@26bab2f1]
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 649769713 to pool.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Checked out connection 649769713 from pool.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@26bab2f1]
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 1
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@26bab2f1]
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@26bab2f1]
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 649769713 to pool.
+[main] DEBUG com.solvd.newsPortal.main.Runner  - {id=11, name='testing', date=2021-08-11, body='body', suscription_levelRequired={id=1, name='Free', cost=0.0}, category={id=1, name='name test'}, author={id=3, name='John', last_name='Smith', age=32, suscription_level={id=1, name='Free', cost=0.0}}}
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Checked out connection 649769713 from pool.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@26bab2f1]
+[main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ==>  Preparing: SELECT id, name, last_name, age, Suscription_level_id as sl_id FROM newsPortal.Users WHERE id = 2;
+[main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ==> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - <==      Total: 1
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@26bab2f1]
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@26bab2f1]
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 649769713 to pool.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Checked out connection 649769713 from pool.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@26bab2f1]
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 2;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 1
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@26bab2f1]
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@26bab2f1]
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 649769713 to pool.
+[main] DEBUG com.solvd.newsPortal.main.Runner  - {id=2, name='Nicolás', last_name='Rufino', age=19, suscription_level={id=2, name='Plus', cost=10.0}}

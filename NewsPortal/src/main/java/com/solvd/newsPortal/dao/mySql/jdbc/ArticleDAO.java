@@ -12,7 +12,7 @@ import java.sql.*;
 public class ArticleDAO extends AbstractMysqlJdbcDAO<Article> implements IArticleDAO {
     private final static Logger LOGGER = Logger.getLogger(ArticleDAO.class);
     private final static String CREATE ="INSERT INTO `newsPortal`.`Articles` (`name`, `date`, `body`, VALUES (?, ?, ?, ?, ?, ?);";
-    private final static String GET = "SELECT * FROM `newsPortal`.`Articles` WHERE id = ?;";
+    private final static String GET = "SELECT * FROM `newsPortal`.`Articles` WHERE id = ?;x";
     private final static String UPDATE = "UPDATE `newsPortal`.`Articles` SET `name` = ?, `date` = ?, `body` = ?, `Suscription_level_id` = ?, `Categories_id` = ?, `author` = ? WHERE (`id` = ?);";
     private final static String DELETE = "DELETE FROM `newsPortal`.`Articles` WHERE (`id` = ?);";
 
