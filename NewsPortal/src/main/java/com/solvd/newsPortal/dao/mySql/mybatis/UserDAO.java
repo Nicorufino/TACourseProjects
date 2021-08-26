@@ -1,9 +1,6 @@
 package com.solvd.newsPortal.dao.mySql.mybatis;
 
-import com.mysql.cj.log.Log;
 import com.solvd.newsPortal.dao.IUserDAO;
-import com.solvd.newsPortal.dao.mySql.jdbc.AbstractMysqlJdbcDAO;
-import com.solvd.newsPortal.models.user.Suscription_level;
 import com.solvd.newsPortal.models.user.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -13,9 +10,6 @@ import org.apache.log4j.Logger;
 
 import java.io.IOException;
 import java.io.Reader;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 
 public class UserDAO extends AbstractMysqlMybatisDAO<User> implements IUserDAO {
     private final static Logger LOGGER = Logger.getLogger(UserDAO.class);

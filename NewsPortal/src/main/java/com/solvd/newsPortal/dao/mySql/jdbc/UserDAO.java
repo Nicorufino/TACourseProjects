@@ -1,6 +1,6 @@
 package com.solvd.newsPortal.dao.mySql.jdbc;
 
-import com.solvd.newsPortal.models.user.Suscription_level;
+import com.solvd.newsPortal.models.user.SuscriptionLevel;
 import com.solvd.newsPortal.models.user.User;
 import com.solvd.newsPortal.dao.IUserDAO;
 import org.apache.log4j.Logger;
@@ -22,8 +22,8 @@ public class UserDAO extends AbstractMysqlJdbcDAO<User> implements IUserDAO {
         u.setName(rs.getString("name"));
         u.setLastName(rs.getString("last_name"));
 
-        Suscription_level suscription_level = new Suscription_level(rs.getLong("Suscription_level_id"));
-        u.setSuscription_level(suscription_level);
+        SuscriptionLevel suscription_level = new SuscriptionLevel(rs.getLong("Suscription_level_id"));
+        u.setSuscriptionLevel(suscription_level);
 
         return u;
     }
@@ -33,7 +33,7 @@ public class UserDAO extends AbstractMysqlJdbcDAO<User> implements IUserDAO {
         ps.setString(1, item.getName());
         ps.setString(2, item.getLastName());
         ps.setInt(3, item.getAge());
-        ps.setLong(4, item.getSuscription_level().getId());
+        ps.setLong(4, item.getSuscriptionLevel().getId());
     }
 
     @Override

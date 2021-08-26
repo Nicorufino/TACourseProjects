@@ -26,6 +26,6 @@
         <result column="name" property="name"/>
         <result column="last_name" property="lastName"/>
         <result column="age" property="age"/>
-        <association property="suscription_level" columnPrefix="sl_" resultMap="com.solvd.newsPortal.dao.ISuscription_levelDAO.slResultMap"/>
+        <association property="suscriptionLevel" columnPrefix="sl_" resultMap="com.solvd.newsPortal.dao.ISuscriptionLevelDAO.slResultMap"/>
     </resultMap>
 </mapper>

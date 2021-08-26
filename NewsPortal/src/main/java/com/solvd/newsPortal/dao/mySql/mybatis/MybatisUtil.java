@@ -27,8 +27,7 @@ public class MybatisUtil {
 
 
     public static SqlSession getSession(){
-        Connection connection = ConnectionPool.getInstance().getConnection();
-        return ssf.openSession(connection);
+        return ssf.openSession();
 
     }
 

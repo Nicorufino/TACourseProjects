@@ -27,7 +27,7 @@
         <result column="name" property="name"/>
         <result column="date" property="date"/>
         <result column="body" property="body"/>
-        <association property="suscription_levelRequired" columnPrefix="sl_" resultMap="com.solvd.newsPortal.dao.ISuscription_levelDAO.slResultMap"/>
+        <association property="suscriptionLevelRequired" columnPrefix="sl_" resultMap="com.solvd.newsPortal.dao.ISuscriptionLevelDAO.slResultMap"/>
         <association property="category" columnPrefix="cat_" resultMap="com.solvd.newsPortal.dao.ICategoryDAO.categoryResultMap"/>
         <association property="author" columnPrefix="author_" resultMap="com.solvd.newsPortal.dao.IUserDAO.userResultMap"/>
     </resultMap>

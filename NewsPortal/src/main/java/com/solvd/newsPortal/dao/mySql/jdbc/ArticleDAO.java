@@ -2,7 +2,7 @@ package com.solvd.newsPortal.dao.mySql.jdbc;
 
 import com.solvd.newsPortal.models.article.Article;
 import com.solvd.newsPortal.models.article.Category;
-import com.solvd.newsPortal.models.user.Suscription_level;
+import com.solvd.newsPortal.models.user.SuscriptionLevel;
 import com.solvd.newsPortal.models.user.User;
 import com.solvd.newsPortal.dao.IArticleDAO;
 import org.apache.log4j.Logger;
@@ -24,8 +24,8 @@ public class ArticleDAO extends AbstractMysqlJdbcDAO<Article> implements IArticl
         a.setDate(rs.getDate("date"));
         a.setName(rs.getString("name"));
         a.setBody(rs.getString("body"));
-        Suscription_level sl = new Suscription_level(rs.getLong("Suscription_level_id"));
-        a.setSuscription_levelRequired(sl);
+        SuscriptionLevel sl = new SuscriptionLevel(rs.getLong("Suscription_level_id"));
+        a.setSuscriptionLevelRequired(sl);
         User author = new User(rs.getLong("author"));
         a.setAuthor(author);
         Category category = new Category(rs.getLong("Categories_id"));
@@ -39,7 +39,7 @@ public class ArticleDAO extends AbstractMysqlJdbcDAO<Article> implements IArticl
         ps.setString(1, item.getName());
         ps.setDate(2, Date.valueOf(item.getDate()));
         ps.setString(3, item.getBody());
-        ps.setLong(4, item.getSuscription_levelRequired().getId());
+        ps.setLong(4, item.getSuscriptionLevelRequired().getId());
         ps.setLong(5, item.getCategory().getId());
         ps.setLong(6, item.getAuthor().getId());
     }

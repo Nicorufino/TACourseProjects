@@ -21,7 +21,7 @@ public class User {
     private Integer age;
     @JsonProperty("suscriptionLevel")
     @XmlElement(name = "suscriptionLevel")
-    private Suscription_level suscription_level;
+    private SuscriptionLevel suscriptionLevel;
 
     public User() {
     }
@@ -30,12 +30,12 @@ public class User {
         this.id = id;
     }
 
-    public User(Long id, String name, String lastName, Integer age, Suscription_level suscription_level) {
+    public User(Long id, String name, String lastName, Integer age, SuscriptionLevel suscriptionLevel) {
         this.id = id;
         this.name = name;
         this.lastName = lastName;
         this.age = age;
-        this.suscription_level = suscription_level;
+        this.suscriptionLevel = suscriptionLevel;
     }
 
     public Long getId() {
@@ -70,12 +70,12 @@ public class User {
         this.age = age;
     }
 
-    public Suscription_level getSuscription_level() {
-        return suscription_level;
+    public SuscriptionLevel getSuscriptionLevel() {
+        return suscriptionLevel;
     }
 
-    public void setSuscription_level(Suscription_level suscription_level) {
-        this.suscription_level = suscription_level;
+    public void setSuscriptionLevel(SuscriptionLevel suscriptionLevel) {
+        this.suscriptionLevel = suscriptionLevel;
     }
 
     @Override
@@ -84,7 +84,7 @@ public class User {
                 ", name='" + name + '\'' +
                 ", last_name='" + lastName + '\'' +
                 ", age=" + age +
-                ", suscription_level=" + suscription_level +
+                ", suscription_level=" + suscriptionLevel +
                 '}';
     }
 }

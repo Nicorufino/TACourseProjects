@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.solvd.newsPortal.models.user.Suscription_level;
+import com.solvd.newsPortal.models.user.SuscriptionLevel;
 import com.solvd.newsPortal.models.user.User;
 import com.solvd.newsPortal.jackson.LocalDateDeserializer;
 import com.solvd.newsPortal.jackson.LocalDateSerializer;
@@ -37,7 +37,7 @@ public class Article {
     private String body;
     @JsonProperty("suscriptionLevel")
     @XmlElement(name = "suscriptionLevel")
-    private Suscription_level suscription_levelRequired;
+    private SuscriptionLevel suscriptionLevelRequired;
     @JsonProperty("category")
     @XmlElement(name = "category")
     private Category category;
@@ -52,21 +52,21 @@ public class Article {
         this.id = id;
     }
 
-    public Article(String name, LocalDate date, String body, Suscription_level suscription_levelRequired, Category category, User author) {
+    public Article(String name, LocalDate date, String body, SuscriptionLevel suscriptionLevelRequired, Category category, User author) {
         this.name = name;
         this.date = date;
         this.body = body;
-        this.suscription_levelRequired = suscription_levelRequired;
+        this.suscriptionLevelRequired = suscriptionLevelRequired;
         this.category = category;
         this.author = author;
     }
 
-    public Article(Long id, String name, LocalDate date, String body, Suscription_level suscription_levelRequired, Category category, User author) {
+    public Article(Long id, String name, LocalDate date, String body, SuscriptionLevel suscriptionLevelRequired, Category category, User author) {
         this.id = id;
         this.name = name;
         this.date = date;
         this.body = body;
-        this.suscription_levelRequired = suscription_levelRequired;
+        this.suscriptionLevelRequired = suscriptionLevelRequired;
         this.category = category;
         this.author = author;
     }
@@ -103,12 +103,12 @@ public class Article {
         this.body = body;
     }
 
-    public Suscription_level getSuscription_levelRequired() {
-        return suscription_levelRequired;
+    public SuscriptionLevel getSuscriptionLevelRequired() {
+        return suscriptionLevelRequired;
     }
 
-    public void setSuscription_levelRequired(Suscription_level suscription_levelRequired) {
-        this.suscription_levelRequired = suscription_levelRequired;
+    public void setSuscriptionLevelRequired(SuscriptionLevel suscriptionLevelRequired) {
+        this.suscriptionLevelRequired = suscriptionLevelRequired;
     }
 
     public Category getCategory() {
@@ -133,7 +133,7 @@ public class Article {
                 ", name='" + name + '\'' +
                 ", date=" + date +
                 ", body='" + body + '\'' +
-                ", suscription_levelRequired=" + suscription_levelRequired +
+                ", suscription_levelRequired=" + suscriptionLevelRequired +
                 ", category=" + category +
                 ", author=" + author +
                 '}';

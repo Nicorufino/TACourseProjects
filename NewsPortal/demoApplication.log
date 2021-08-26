@@ -83,11 +83,11 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG com.solvd.newsPortal.main.Runner  - name: name test
 [main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
 [main] DEBUG com.solvd.newsPortal.main.Runner  - name: name test
-[main] DEBUG com.solvd.newsPortal.dao.mySql.jdbc.Suscription_levelDAO  - com.solvd.newsPortal.models.user.Suscription_level@64b0598
-[main] DEBUG com.solvd.newsPortal.main.Runner  - User{id=2, name='Nicolás', last_name='Rufino', age=19, suscription_levelRequired=com.solvd.newsPortal.models.user.Suscription_level@64b0598}
+[main] DEBUG com.solvd.newsPortal.dao.mySql.jdbc.SuscriptionLevelDAO  - com.solvd.newsPortal.models.user.SuscriptionLevel@64b0598
+[main] DEBUG com.solvd.newsPortal.main.Runner  - User{id=2, name='Nicolás', last_name='Rufino', age=19, suscription_levelRequired=com.solvd.newsPortal.models.user.SuscriptionLevel@64b0598}
 [main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
 [main] DEBUG com.solvd.newsPortal.main.Runner  - name: name test
-[main] DEBUG com.solvd.newsPortal.dao.mySql.jdbc.Suscription_levelDAO  - Suscription_level{id=2, name='Plus', cost=10.0}
+[main] DEBUG com.solvd.newsPortal.dao.mySql.jdbc.SuscriptionLevelDAO  - Suscription_level{id=2, name='Plus', cost=10.0}
 [main] DEBUG com.solvd.newsPortal.main.Runner  - User{id=2, name='Nicolás', last_name='Rufino', age=19, suscription_levelRequired=Suscription_level{id=2, name='Plus', cost=10.0}}
 [main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
 [main] DEBUG com.solvd.newsPortal.main.Runner  - name: name test
@@ -723,9 +723,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 259251414.
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@f73dcd6]
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 12;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <==      Total: 0
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 12;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 0
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@f73dcd6]
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@f73dcd6]
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 259251414 to pool.
@@ -777,9 +777,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 1832283291.
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6d366c9b]
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 12;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <==      Total: 0
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 12;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 0
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6d366c9b]
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6d366c9b]
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 1832283291 to pool.
@@ -792,9 +792,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 1800649922.
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6b53bcc2]
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 12;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <==      Total: 0
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 12;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 0
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6b53bcc2]
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6b53bcc2]
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 1800649922 to pool.
@@ -806,9 +806,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 1800649922.
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6b53bcc2]
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 12;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <==      Total: 0
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 12;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 0
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6b53bcc2]
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6b53bcc2]
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 1800649922 to pool.
@@ -820,9 +820,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 1800649922.
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6b53bcc2]
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 2;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <==      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 2;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 1
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6b53bcc2]
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6b53bcc2]
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 1800649922 to pool.
@@ -899,9 +899,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 1943855334 to pool.
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 259251414.
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@f73dcd6]
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 12;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <==      Total: 0
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 12;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 0
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@f73dcd6]
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@f73dcd6]
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 259251414 to pool.
@@ -1307,9 +1307,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 1800649922.
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6b53bcc2]
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 2;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <==      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 2;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 1
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6b53bcc2]
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6b53bcc2]
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 1800649922 to pool.
@@ -1876,9 +1876,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6b53bcc2]
 [main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ==>  Preparing: SELECT * FROM `newsPortal`.`Articles` WHERE id = 11;
 [main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ====> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <====      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ====> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <====      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Categories where id = 1;
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ====> Parameters: 
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - <====      Total: 1
@@ -1909,9 +1909,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@ec2cc4]
 [main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ==>  Preparing: SELECT * FROM `newsPortal`.`Articles` WHERE id = 11;
 [main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ====> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <====      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ====> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <====      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Categories where id = 1;
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ====> Parameters: 
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - <====      Total: 1
@@ -1924,9 +1924,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@30d4b288]
 [main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Users WHERE id = 3;
 [main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ====> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <====      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ====> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <====      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - <==      Total: 1
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 1493988307.
@@ -1957,9 +1957,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@ec2cc4]
 [main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ==>  Preparing: SELECT * FROM `newsPortal`.`Articles` WHERE id = 11;
 [main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ====> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <====      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ====> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <====      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Categories where id = 1;
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ====> Parameters: 
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - <====      Total: 1
@@ -1972,9 +1972,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@30d4b288]
 [main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Users WHERE id = 3;
 [main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ====> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <====      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ====> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <====      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - <==      Total: 1
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 1493988307.
@@ -1985,9 +1985,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 1978504976.
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@75ed9710]
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <==      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 1
 [main] DEBUG com.solvd.newsPortal.main.Runner  - Article{id=11, name='testing', date=2021-08-11, body='body', suscription_levelRequired=Suscription_level{id=1, name='Free', cost=0.0}, category=Category{id=1, name='name test'}, author=User{id=3, name='John', last_name='Smith', age=32, suscription_levelRequired=Suscription_level{id=1, name='Free', cost=0.0}}}
 [main] DEBUG org.apache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
@@ -2017,15 +2017,15 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG com.solvd.newsPortal.dao.ICommentDAO.getItemById  - ==> Parameters: 
 [main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Users WHERE id = 2;
 [main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ====> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 2;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <======      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 2;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ======> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <======      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - <====      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ====>  Preparing: SELECT * FROM `newsPortal`.`Articles` WHERE id = 11;
 [main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ====> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <======      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ======> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <======      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Categories where id = 1;
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ======> Parameters: 
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - <======      Total: 1
@@ -2048,15 +2048,15 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG com.solvd.newsPortal.dao.ICommentDAO.getItemById  - ==> Parameters: 
 [main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Users WHERE id = 2;
 [main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ====> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 2;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <======      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 2;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ======> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <======      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - <====      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ====>  Preparing: SELECT * FROM `newsPortal`.`Articles` WHERE id = 11;
 [main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ====> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <======      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ======> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <======      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Categories where id = 1;
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ======> Parameters: 
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - <======      Total: 1
@@ -2079,15 +2079,15 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG com.solvd.newsPortal.dao.ICommentDAO.getItemById  - ==> Parameters: 
 [main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Users WHERE id = 2;
 [main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ====> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 2;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <======      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 2;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ======> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <======      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - <====      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ====>  Preparing: SELECT * FROM `newsPortal`.`Articles` WHERE id = 11;
 [main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ====> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <======      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ======> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <======      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Categories where id = 1;
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ======> Parameters: 
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - <======      Total: 1
@@ -2110,15 +2110,15 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG com.solvd.newsPortal.dao.ICommentDAO.getItemById  - ==> Parameters: 
 [main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Users WHERE id = 2;
 [main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ====> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 2;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <======      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 2;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ======> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <======      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - <====      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ====>  Preparing: SELECT * FROM `newsPortal`.`Articles` WHERE id = 11;
 [main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ====> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <======      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ======> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <======      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Categories where id = 1;
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ======> Parameters: 
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - <======      Total: 1
@@ -2141,15 +2141,15 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG com.solvd.newsPortal.dao.ICommentDAO.getItemById  - ==> Parameters: 
 [main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Users WHERE id = 2;
 [main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ====> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 2;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <======      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 2;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ======> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <======      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - <====      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ====>  Preparing: SELECT * FROM `newsPortal`.`Articles` WHERE id = 11;
 [main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ====> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <======      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ======> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <======      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Categories where id = 1;
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ======> Parameters: 
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - <======      Total: 1
@@ -2173,15 +2173,15 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG com.solvd.newsPortal.dao.ICommentDAO.getItemById  - ==> Parameters: 
 [main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Users WHERE id = 2;
 [main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ====> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 2;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <======      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 2;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ======> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <======      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - <====      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ====>  Preparing: SELECT * FROM `newsPortal`.`Articles` WHERE id = 11;
 [main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ====> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <======      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ======> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <======      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Categories where id = 1;
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ======> Parameters: 
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - <======      Total: 1
@@ -2218,9 +2218,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49601f82]
 [main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ==>  Preparing: SELECT * FROM `newsPortal`.`Articles` WHERE id = 11;
 [main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ====> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <====      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ====> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <====      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Categories where id = 1;
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ====> Parameters: 
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - <====      Total: 1
@@ -2233,9 +2233,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@108bdbd8]
 [main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Users WHERE id = 3;
 [main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ====> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <====      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ====> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <====      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - <==      Total: 1
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 1501513951.
@@ -2246,9 +2246,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 2075899560.
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7bbbb6a8]
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <==      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 1
 [main] DEBUG com.solvd.newsPortal.main.Runner  - Article{id=11, name='testing', date=2021-08-11, body='body', suscription_levelRequired=Suscription_level{id=1, name='Free', cost=0.0}, category=Category{id=1, name='name test'}, author=User{id=3, name='John', last_name='Smith', age=32, suscription_levelRequired=Suscription_level{id=1, name='Free', cost=0.0}}}
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
@@ -2261,15 +2261,15 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG com.solvd.newsPortal.dao.ICommentDAO.getItemById  - ==> Parameters: 
 [main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Users WHERE id = 2;
 [main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ====> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 2;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <======      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 2;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ======> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <======      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - <====      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ====>  Preparing: SELECT * FROM `newsPortal`.`Articles` WHERE id = 11;
 [main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ====> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <======      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ======> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <======      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Categories where id = 1;
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ======> Parameters: 
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - <======      Total: 1
@@ -2293,9 +2293,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG com.solvd.newsPortal.dao.ICommentDAO.getItemById  - ==> Parameters: 
 [main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ====>  Preparing: SELECT * FROM `newsPortal`.`Articles` WHERE id = 11;
 [main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ====> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <======      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ======> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <======      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Categories where id = 1;
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ======> Parameters: 
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - <======      Total: 1
@@ -2317,9 +2317,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG com.solvd.newsPortal.dao.ICommentDAO.getItemById  - ==> Parameters: 
 [main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ====>  Preparing: SELECT * FROM `newsPortal`.`Articles` WHERE id = 11;
 [main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ====> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ======> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <======      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ======> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <======      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ======>  Preparing: SELECT * FROM newsPortal.Categories where id = 1;
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ======> Parameters: 
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - <======      Total: 1
@@ -2339,9 +2339,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@34f7234e]
 [main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ==>  Preparing: SELECT * FROM `newsPortal`.`Articles` WHERE id = 11;
 [main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ====> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <====      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ====> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <====      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Categories where id = 1;
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ====> Parameters: 
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - <====      Total: 1
@@ -2360,9 +2360,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@44e3a2b2]
 [main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ==>  Preparing: SELECT * FROM `newsPortal`.`Articles` WHERE id = 11;
 [main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ====> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <====      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ====> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <====      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Categories where id = 1;
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ====> Parameters: 
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - <====      Total: 1
@@ -2378,9 +2378,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@34f7234e]
 [main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ==>  Preparing: SELECT * FROM `newsPortal`.`Articles` WHERE id = 11;
 [main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ====> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <====      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ====> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <====      Total: 1
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ====>  Preparing: SELECT * FROM newsPortal.Categories where id = 1;
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ====> Parameters: 
 [main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - <====      Total: 1
@@ -2460,9 +2460,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 276869158.
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1080b026]
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <==      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 1
 [main] DEBUG com.solvd.newsPortal.main.Runner  - Article{id=11, name='testing', date=2021-08-11, body='body', suscription_levelRequired=Suscription_level{id=1, name='Free', cost=0.0}, category=Category{id=1, name='name test'}, author=User{id=3, name='John', last_name='Smith', age=32, suscription_levelRequired=Suscription_level{id=1, name='null', cost=null}}}
 [main] DEBUG org.apache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
@@ -2500,9 +2500,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 1288108586.
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4cc6fa2a]
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <==      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 1
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 1493988307.
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@590c73d3]
@@ -2512,9 +2512,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 1978504976.
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@75ed9710]
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <==      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 1
 [main] DEBUG com.solvd.newsPortal.main.Runner  - Article{id=11, name='testing', date=2021-08-11, body='body', suscription_levelRequired=Suscription_level{id=1, name='Free', cost=0.0}, category=Category{id=1, name='name test'}, author=User{id=3, name='John', last_name='Smith', age=32, suscription_levelRequired=Suscription_level{id=1, name='Free', cost=0.0}}}
 [main] DEBUG org.apache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
@@ -2578,9 +2578,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 259251414.
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@f73dcd6]
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <==      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 1
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 819245704.
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@30d4b288]
@@ -2590,9 +2590,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 2054757222.
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7a791b66]
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <==      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 1
 [main] DEBUG com.solvd.newsPortal.main.Runner  - Article{id=11, name='testing', date=2021-08-11, body='body', suscription_levelRequired=Suscription_level{id=1, name='Free', cost=0.0}, category=Category{id=1, name='name test'}, author=User{id=3, name='John', last_name='Smith', age=32, suscription_level=Suscription_level{id=1, name='Free', cost=0.0}}}
 [main] DEBUG org.apache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
@@ -2630,9 +2630,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 1288108586.
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4cc6fa2a]
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <==      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 1
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 1493988307.
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@590c73d3]
@@ -2642,9 +2642,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 1978504976.
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@75ed9710]
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <==      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 1
 [main] DEBUG com.solvd.newsPortal.main.Runner  - Article{id=11, name='testing', date=2021-08-11, body='body', suscription_levelRequired=id=1, name='Free', cost=0.0}, category=id=1, name='name test'}, author=id=3, name='John', last_name='Smith', age=32, suscription_level=id=1, name='Free', cost=0.0}}}
 [main] DEBUG org.apache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
@@ -2682,9 +2682,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 259251414.
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@f73dcd6]
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <==      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 1
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 819245704.
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@30d4b288]
@@ -2694,9 +2694,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 2054757222.
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7a791b66]
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <==      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 1
 [main] DEBUG com.solvd.newsPortal.main.Runner  - Article{id=11, name='testing', date=2021-08-11, body='body', suscription_levelRequired={id=1, name='Free', cost=0.0}, category={id=1, name='name test'}, author={id=3, name='John', last_name='Smith', age=32, suscription_level={id=1, name='Free', cost=0.0}}}
 [main] DEBUG org.apache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
@@ -2734,9 +2734,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 1288108586.
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4cc6fa2a]
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <==      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 1
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 1493988307.
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@590c73d3]
@@ -2746,9 +2746,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 1978504976.
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@75ed9710]
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <==      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 1
 [main] DEBUG com.solvd.newsPortal.main.Runner  - {id=11, name='testing', date=2021-08-11, body='body', suscription_levelRequired={id=1, name='Free', cost=0.0}, category={id=1, name='name test'}, author={id=3, name='John', last_name='Smith', age=32, suscription_level={id=1, name='Free', cost=0.0}}}
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
@@ -2767,9 +2767,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 501608687.
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1de5f0ef]
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 2;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <==      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 2;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 1
 [main] DEBUG com.solvd.newsPortal.main.Runner  - {id=2, name='Nicolás', last_name='Rufino', age=19, suscription_level={id=2, name='Plus', cost=10.0}}
 [main] DEBUG org.apache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
@@ -2809,9 +2809,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 1182311147.
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4678a2eb]
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <==      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 1
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4678a2eb]
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4678a2eb]
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 1182311147 to pool.
@@ -2827,9 +2827,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 172699023.
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@a4b2d8f]
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <==      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 1
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@a4b2d8f]
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@a4b2d8f]
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 172699023 to pool.
@@ -2854,9 +2854,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 1821100643.
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6c8bca63]
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 2;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <==      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 2;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 1
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6c8bca63]
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6c8bca63]
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 1821100643 to pool.
@@ -2895,9 +2895,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 1636322481.
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@61884cb1]
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <==      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 1
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@61884cb1]
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@61884cb1]
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 1636322481 to pool.
@@ -2908,9 +2908,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 2044337856.
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@79da1ec0]
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <==      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 1
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@79da1ec0]
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@79da1ec0]
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 2044337856 to pool.
@@ -2935,9 +2935,9 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 1592840862.
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5ef0d29e]
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 2;
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - ==> Parameters: 
-[main] DEBUG com.solvd.newsPortal.dao.ISuscription_levelDAO.getItemById  - <==      Total: 1
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 2;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters:
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 1
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5ef0d29e]
 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5ef0d29e]
 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 1592840862 to pool.
@@ -2949,3 +2949,236 @@ java.sql.SQLException: No suitable driver found for jdbc:mysql://52.59.193.212:3
 [main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
 [main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
 [main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
+[main] DEBUG org.apache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ==>  Preparing: SELECT id, name, date, body, Suscription_level_id as sl_id, Categories_id as cat_id, author as author_id FROM `newsPortal`.`Articles` WHERE id = 11;
+[main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ==> Parameters: 
+[main] DEBUG org.apache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ==>  Preparing: SELECT id, name, date, body, Suscription_level_id as sl_id, Categories_id as cat_id, author as author_id FROM `newsPortal`.`Articles` WHERE id = 11;
+[main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ==> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - <==      Total: 1
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@12bcd0c0]
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 1491860739.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@58ebfd03]
+[main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ==>  Preparing: SELECT id, name, last_name, age, Suscription_level_id as sl_id FROM newsPortal.Users WHERE id = 3;
+[main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ==> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - <==      Total: 1
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@58ebfd03]
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@58ebfd03]
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 1491860739 to pool.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 259251414.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@f73dcd6]
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 1
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@f73dcd6]
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@f73dcd6]
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 259251414 to pool.
+[main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Categories where id = 1;
+[main] DEBUG org.apache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ==>  Preparing: SELECT id, name, date, body, Suscription_level_id as sl_id, Categories_id as cat_id, author as author_id FROM `newsPortal`.`Articles` WHERE id = 11;
+[main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ==> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - <==      Total: 1
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@12bcd0c0]
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 1491860739.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@58ebfd03]
+[main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ==>  Preparing: SELECT id, name, last_name, age, Suscription_level_id as sl_id FROM newsPortal.Users WHERE id = 3;
+[main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ==> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - <==      Total: 1
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@58ebfd03]
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@58ebfd03]
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 1491860739 to pool.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 259251414.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@f73dcd6]
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 1
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@f73dcd6]
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@f73dcd6]
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 259251414 to pool.
+[main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Categories where id = 1;
+[main] DEBUG org.apache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG com.solvd.newsPortal.connectionPool.ConnectionPool  - connections created
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ==>  Preparing: SELECT id, name, date, body, Suscription_level_id as sl_id, Categories_id as cat_id, author as author_id FROM `newsPortal`.`Articles` WHERE id = 11;
+[main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ==> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - <==      Total: 1
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@354fc8f0]
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 172699023.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@a4b2d8f]
+[main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ==>  Preparing: SELECT id, name, last_name, age, Suscription_level_id as sl_id FROM newsPortal.Users WHERE id = 3;
+[main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ==> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - <==      Total: 1
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@a4b2d8f]
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@a4b2d8f]
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 172699023 to pool.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 1078566479.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40499e4f]
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 1
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40499e4f]
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40499e4f]
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 1078566479 to pool.
+[main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Categories where id = 1;
+[main] DEBUG org.apache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 204805934.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@c35172e]
+[main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ==>  Preparing: SELECT id, name, date, body, Suscription_level_id as sl_id, Categories_id as cat_id, author as author_id FROM `newsPortal`.`Articles` WHERE id = 11;
+[main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - ==> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.IArticleDAO.getItemById  - <==      Total: 1
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@c35172e]
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@c35172e]
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 204805934 to pool.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 1976166251.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@75c9e76b]
+[main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ==>  Preparing: SELECT id, name, last_name, age, Suscription_level_id as sl_id FROM newsPortal.Users WHERE id = 3;
+[main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ==> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - <==      Total: 1
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@75c9e76b]
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@75c9e76b]
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 1976166251 to pool.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 812143047.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@306851c7]
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 1
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@306851c7]
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@306851c7]
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 812143047 to pool.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Checked out connection 204805934 from pool.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@c35172e]
+[main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Categories where id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - ==> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.ICategoryDAO.getItemById  - <==      Total: 1
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@c35172e]
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@c35172e]
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 204805934 to pool.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 894421232.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@354fc8f0]
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 1;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 1
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@354fc8f0]
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@354fc8f0]
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 894421232 to pool.
+[main] DEBUG com.solvd.newsPortal.main.Runner  - {id=11, name='testing', date=2021-08-11, body='body', suscription_levelRequired={id=1, name='Free', cost=0.0}, category={id=1, name='name test'}, author={id=3, name='John', last_name='Smith', age=32, suscription_level={id=1, name='Free', cost=0.0}}}
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 1114335860.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@426b6a74]
+[main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ==>  Preparing: SELECT id, name, last_name, age, Suscription_level_id as sl_id FROM newsPortal.Users WHERE id = 2;
+[main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - ==> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.IUserDAO.getItemById  - <==      Total: 1
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@426b6a74]
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@426b6a74]
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 1114335860 to pool.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Created connection 1868578441.
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6f603e89]
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==>  Preparing: SELECT * FROM newsPortal.Suscription_level WHERE id = 2;
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - ==> Parameters: 
+[main] DEBUG com.solvd.newsPortal.dao.ISuscriptionLevelDAO.getItemById  - <==      Total: 1
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6f603e89]
+[main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6f603e89]
+[main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource  - Returned connection 1868578441 to pool.
+[main] DEBUG com.solvd.newsPortal.main.Runner  - {id=2, name='Nicolás', last_name='Rufino', age=19, suscription_level={id=2, name='Plus', cost=10.0}}

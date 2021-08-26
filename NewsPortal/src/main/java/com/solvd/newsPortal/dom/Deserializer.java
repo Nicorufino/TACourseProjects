@@ -2,7 +2,7 @@ package com.solvd.newsPortal.dom;
 
 import com.solvd.newsPortal.models.article.Article;
 import com.solvd.newsPortal.models.article.Category;
-import com.solvd.newsPortal.models.user.Suscription_level;
+import com.solvd.newsPortal.models.user.SuscriptionLevel;
 import com.solvd.newsPortal.models.user.User;
 import org.apache.log4j.Logger;
 import org.w3c.dom.Element;
@@ -56,7 +56,7 @@ public class Deserializer {
                 String name = element.getElementsByTagName("name").item(1).getTextContent();
                 Float cost = Float.valueOf(element.getElementsByTagName("cost").item(0).getTextContent());
                 Long id = Long.valueOf(slList.item(0).getAttributes().getNamedItem("id").getTextContent());
-                deserialized.setSuscription_levelRequired(new Suscription_level(id, name, cost));
+                deserialized.setSuscriptionLevelRequired(new SuscriptionLevel(id, name, cost));
 
                 NodeList catList = element.getElementsByTagName("category");
                 String catName = element.getElementsByTagName("name").item(2).getTextContent();
@@ -69,7 +69,7 @@ public class Deserializer {
                 Long autId = Long.valueOf(autList.item(0).getAttributes().getNamedItem("id").getTextContent());
                 Integer autAge = Integer.valueOf(autList.item(0).getAttributes().getNamedItem("age").getTextContent());
 
-                Suscription_level autSL = new Suscription_level();
+                SuscriptionLevel autSL = new SuscriptionLevel();
                 autSL.setId(Long.valueOf(slList.item(1).getAttributes().getNamedItem("id").getTextContent()));
                 autSL.setName(element.getElementsByTagName("name").item(3).getTextContent());
                 autSL.setCost(Float.parseFloat(element.getElementsByTagName("cost").item(1).getTextContent()));

@@ -6,7 +6,7 @@ import javax.xml.bind.annotation.*;
 
 @XmlRootElement(name = "suscriptionLevel")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Suscription_level {
+public class SuscriptionLevel {
     @JsonProperty("id")
     @XmlAttribute(name = "id")
     private Long id;
@@ -17,14 +17,14 @@ public class Suscription_level {
     @XmlElement(name = "cost")
     private Float cost;
 
-    public Suscription_level() {
+    public SuscriptionLevel() {
     }
 
-    public Suscription_level(Long id) {
+    public SuscriptionLevel(Long id) {
         this.id = id;
     }
 
-    public Suscription_level(Long id, String name, Float cost) {
+    public SuscriptionLevel(Long id, String name, Float cost) {
         this.id = id;
         this.name = name;
         this.cost = cost;
