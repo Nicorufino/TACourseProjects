@@ -19,9 +19,7 @@ import java.sql.SQLException;
 
 public class CommentDAO extends AbstractMysqlMybatisDAO<Comment> implements ICommentDAO {
     private final static Logger LOGGER = Logger.getLogger(CommentDAO.class);
-    private Reader r = Resources.getResourceAsReader("mybatis-config.xml");
-    private SqlSessionFactory ssf = new SqlSessionFactoryBuilder().build(r);
-    private SqlSession session = ssf.openSession();
+    private SqlSession session = MybatisUtil.getSession();
     private ICommentDAO commentDAO = session.getMapper(ICommentDAO.class);
 
     public CommentDAO() throws IOException {
@@ -30,21 +28,21 @@ public class CommentDAO extends AbstractMysqlMybatisDAO<Comment> implements ICom
 
     @Override
     public void createItem(Comment item) {
-        createItem(item, commentDAO, ssf);
+        createItem(item, commentDAO, session);
     }
 
     @Override
     public Comment getItemById(Long id) {
-        return getItemById(id, commentDAO, ssf);
+        return getItemById(id, commentDAO, session);
     }
 
     @Override
     public void updateItem(Comment item, Long id) {
-        updateItem(item, id, commentDAO, ssf);
+        updateItem(item, id, commentDAO, session);
     }
 
     @Override
     public void deleteById(Long id) {
-        deleteById(id, commentDAO, ssf);
+        deleteById(id, commentDAO, session);
     }
 }

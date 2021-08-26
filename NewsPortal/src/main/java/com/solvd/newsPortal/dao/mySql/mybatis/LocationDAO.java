@@ -17,9 +17,7 @@ import java.sql.SQLException;
 
 public class LocationDAO extends AbstractMysqlMybatisDAO<Location> implements ILocationDAO {
     private final static Logger LOGGER = Logger.getLogger(LocationDAO.class);
-    private Reader r = Resources.getResourceAsReader("mybatis-config.xml");
-    private SqlSessionFactory ssf = new SqlSessionFactoryBuilder().build(r);
-    private SqlSession session = ssf.openSession();
+    private SqlSession session = MybatisUtil.getSession();
     private ILocationDAO locationDAO = session.getMapper(ILocationDAO.class);
 
     public LocationDAO() throws IOException {
@@ -27,21 +25,21 @@ public class LocationDAO extends AbstractMysqlMybatisDAO<Location> implements IL
 
     @Override
     public void createItem(Location item) {
-        createItem(item, locationDAO, ssf);
+        createItem(item, locationDAO, session);
     }
 
     @Override
     public Location getItemById(Long id) {
-        return getItemById(id, locationDAO, ssf);
+        return getItemById(id, locationDAO, session);
     }
 
     @Override
     public void updateItem(Location item, Long id) {
-        updateItem(item, id, locationDAO, ssf);
+        updateItem(item, id, locationDAO, session);
     }
 
     @Override
     public void deleteById(Long id) {
-        deleteById(id, locationDAO, ssf);
+        deleteById(id, locationDAO, session);
     }
 }

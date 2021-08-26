@@ -30,21 +30,21 @@ public class UserDAO extends AbstractMysqlMybatisDAO<User> implements IUserDAO {
 
     @Override
     public void createItem(User item) {
-        createItem(item, userDAO, ssf);
+        createItem(item, userDAO, session);
     }
 
     @Override
     public User getItemById(Long id) {
-        return getItemById(id, userDAO, ssf);
+        return getItemById(id, userDAO, session);
     }
 
     @Override
     public void updateItem(User item, Long id) {
-        updateItem(item, id, userDAO, ssf);
+        updateItem(item, id, userDAO, session);
     }
 
     @Override
     public void deleteById(Long id) {
-        deleteById(id, userDAO, ssf);
+        deleteById(id, userDAO, session);
     }
 }

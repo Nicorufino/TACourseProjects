@@ -28,22 +28,22 @@ public class TagDAO extends AbstractMysqlMybatisDAO<Tag> implements ITagDAO {
 
     @Override
     public void createItem(Tag item) {
-        createItem(item, tagDAO, ssf);
+        createItem(item, tagDAO, session);
     }
 
     @Override
     public Tag getItemById(Long id) {
-        return getItemById(id, tagDAO, ssf);
+        return getItemById(id, tagDAO, session);
     }
 
     @Override
     public void updateItem(Tag item, Long id) {
-        updateItem(item, id, tagDAO, ssf);
+        updateItem(item, id, tagDAO, session);
     }
 
     @Override
     public void deleteById(Long id) {
-        deleteById(id, tagDAO, ssf);
+        deleteById(id, tagDAO, session);
     }
 }
 

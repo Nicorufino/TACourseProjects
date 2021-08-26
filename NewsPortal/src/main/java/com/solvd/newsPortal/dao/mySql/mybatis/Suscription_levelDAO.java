@@ -28,21 +28,21 @@ public class Suscription_levelDAO extends AbstractMysqlMybatisDAO<Suscription_le
 
     @Override
     public void createItem(Suscription_level item) {
-        createItem(item, suscription_levelDAO, ssf);
+        createItem(item, suscription_levelDAO, session);
     }
 
     @Override
     public Suscription_level getItemById(Long id) {
-        return getItemById(id, suscription_levelDAO, ssf);
+        return getItemById(id, suscription_levelDAO, session);
     }
 
     @Override
     public void updateItem(Suscription_level item, Long id) {
-        updateItem(item, id, suscription_levelDAO, ssf);
+        updateItem(item, id, suscription_levelDAO, session);
     }
 
     @Override
     public void deleteById(Long id) {
-        deleteById(id, suscription_levelDAO, ssf);
+        deleteById(id, suscription_levelDAO, session);
     }
 }

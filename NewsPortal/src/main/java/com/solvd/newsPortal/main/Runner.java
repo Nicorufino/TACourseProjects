@@ -3,6 +3,7 @@ package com.solvd.newsPortal.main;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import com.solvd.newsPortal.connectionPool.ConnectionPool;
 import com.solvd.newsPortal.dao.mySql.mybatis.ArticleDAO;
 import com.solvd.newsPortal.dao.mySql.mybatis.CommentDAO;
 import com.solvd.newsPortal.dao.mySql.mybatis.TagDAO;
@@ -32,8 +33,10 @@ import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import java.io.File;
 import java.io.IOException;
+import java.sql.Connection;
 import java.text.ParseException;
 import java.time.LocalDate;
+import java.util.concurrent.CompletableFuture;
 
 import static com.solvd.newsPortal.dom.Deserializer.deserialize;
 
@@ -84,12 +87,14 @@ public class Runner {
         jsonArticles.getArticleList().stream().forEach(article -> LOGGER.debug(article));
 
         objectMapper.writeValue(new File("src/main/resources/Marshalled.json"), first);
-        */
+
         ArticleService articleService = new ArticleService();
         LOGGER.debug(articleService.getArticleById(11L));
 
         UserService userService = new UserService();
         LOGGER.debug(userService.getUserById(2L));
+        */
+
     }
 }
 

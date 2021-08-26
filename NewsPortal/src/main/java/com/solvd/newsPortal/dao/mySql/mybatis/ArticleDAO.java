@@ -12,31 +12,30 @@ import java.io.Reader;
 
 public class ArticleDAO extends AbstractMysqlMybatisDAO<Article> implements IArticleDAO {
     private final static Logger LOGGER = Logger.getLogger(ArticleDAO.class);
-    private Reader r = Resources.getResourceAsReader("mybatis-config.xml");
-    private SqlSessionFactory ssf = new SqlSessionFactoryBuilder().build(r);
-    private SqlSession session = ssf.openSession();
+    private SqlSession session = MybatisUtil.getSession();
     private IArticleDAO articleDAO = session.getMapper(IArticleDAO.class);
 
-    public ArticleDAO() throws IOException{}
+    public ArticleDAO() throws IOException{
+    }
 
 
     @Override
     public void createItem(Article item) {
-        createItem(item, articleDAO,ssf);
+        createItem(item, articleDAO, session);
     }
 
     @Override
     public Article getItemById(Long id) {
-        return getItemById(id, articleDAO, ssf);
+        return getItemById(id, articleDAO, session);
     }
 
     @Override
     public void updateItem(Article item, Long id) {
-        updateItem(item, id, articleDAO, ssf);
+        updateItem(item, id, articleDAO, session);
     }
 
     @Override
     public void deleteById(Long id) {
-        deleteById(id, articleDAO, ssf);
+        deleteById(id, articleDAO, session);
     }
 }

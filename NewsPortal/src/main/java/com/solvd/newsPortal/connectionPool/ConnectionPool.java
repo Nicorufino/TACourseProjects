@@ -1,6 +1,8 @@
 package com.solvd.newsPortal.connectionPool;
 
 import org.apache.log4j.Logger;
+import org.eclipse.persistence.exceptions.ConcurrencyException;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Connection;
@@ -22,7 +24,7 @@ public class ConnectionPool {
     private String user;
     private String password;
 
-    private BlockingDeque<Optional<Connection>> connectionStack;
+    private BlockingDeque<Connection> connectionStack;
 
     private ConnectionPool(int maxConnections, String url, String dbName, String user, String password) {
         this.maxConnections = maxConnections;
@@ -32,8 +34,6 @@ public class ConnectionPool {
         this.password = password;
         this.connectionStack = new LinkedBlockingDeque<>(maxConnections);
 
-        for (int i = 0; i < maxConnections; i++)
-            connectionStack.push(Optional.empty());
     }
 
     public static ConnectionPool getInstance(){
@@ -54,39 +54,43 @@ public class ConnectionPool {
     }
 
     public Connection getConnection() {
-        if (connectionStack.size() == 0) return null;
+        while (this.connectionStack.isEmpty()) {
+            if (connectionStack.size() < maxConnections){
+             Connection connection = null;
+                try {
+                    connection = DriverManager.getConnection(url, user, password);
+                    connectionStack.push(connection);
 
-        Connection connection = connectionStack.pop().orElse(null);
-        if (connection == null)
-            try {
-                connection = DriverManager.getConnection(url, user, password);
-            } catch (SQLException e){
-                LOGGER.error(e);
+                } catch (SQLException e) {
+                    LOGGER.error(e);
+                }
+
+                connectionStack.push(connection);
+                return connection;
+
             }
+
+            try {
+                wait();
+                LOGGER.debug("waiting for connection");
+            } catch (InterruptedException exception) {
+                LOGGER.error(exception);
+            }
+        }
+        Connection connection = connectionStack.pop();
 
         return connection;
     }
 
     public void returnConnection(Connection connection) {
         if (connectionStack.size() < maxConnections) {
-            connectionStack.push(Optional.of(connection));
+            connectionStack.push((connection));
         }
         else {
             throw new RuntimeException("Connection stack reached its max capacity: " + maxConnections);
         }
     }
 
-    public void closeAll(){
-        try {
-            // Using for each because lambdas cannot throw exceptions
-            for (Optional<Connection> connectionBox : connectionStack) {
-                Connection connection = connectionBox.orElse(null);
-                if (connection != null) connection.close();
-            }
-        } catch (SQLException e){
-            LOGGER.error(e);
-        }
-    }
 
     public int getMaxConnections() {
         return maxConnections;
