@@ -56,8 +56,7 @@ public class Suscription_level {
 
     @Override
     public String toString() {
-        return "Suscription_level{" +
-                "id=" + id +
+        return  "{id=" + id +
                 ", name='" + name + '\'' +
                 ", cost=" + cost +
                 '}';

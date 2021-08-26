@@ -17,13 +17,13 @@
     </delete>
 
     <select id="getItemById" resultMap="commentResultMap">
-        <![CDATA[SELECT * FROM newsPortal.Comments WHERE id = ${id};]]>
+        <![CDATA[SELECT id, comment_text, Users_id, Articles_id FROM newsPortal.Comments WHERE id = ${id};]]>
     </select>
 
     <resultMap type="com.solvd.newsPortal.models.comment.Comment" id="commentResultMap" autoMapping="false">
         <id column="id" property="id"/>
         <result column="comment_text" property="comment_text"/>
-        <association property="user"  resultMap="com.solvd.newsPortal.dao.IUserDAO.userResultMap"/>
-        <association property="article" resultMap="com.solvd.newsPortal.dao.IArticleDAO.articleResultMap"/>
+        <association property="user"  columnPrefix="Users_" resultMap="com.solvd.newsPortal.dao.IUserDAO.userResultMap"/>
+        <association property="article" columnPrefix="Articles_" resultMap="com.solvd.newsPortal.dao.IArticleDAO.articleResultMap"/>
     </resultMap>
 </mapper>

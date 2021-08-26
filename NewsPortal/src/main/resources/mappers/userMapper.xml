@@ -5,12 +5,12 @@
 <mapper namespace="com.solvd.newsPortal.dao.IUserDAO">
     <insert id="createItem" useGeneratedKeys="true" keyProperty="id">
         <![CDATA[INSERT INTO `newsPortal`.`Users` (`name`, `last_name`, `age`,
-         `Suscription_level_id`) VALUES ("${name}", "${lastName}", ${age}, ${suscription_level.id});]]>
+         `Suscription_level_id`) VALUES ("${name}", "${lastName}", ${age}, ${suscription_levelRequired.id});]]>
     </insert>
 
     <update id="updateItem">
         <![CDATA[UPDATE `newsPortal`.`Users` SET `name` = "${name}", `last_name` = "${lastName}",
-         `age` = ${age}, `Suscription_level_id` = ${suscription_level.id} WHERE (`id` = ${id});]]>
+         `age` = ${age}, `Suscription_level_id` = ${suscription_levelRequired.id} WHERE (`id` = ${id});]]>
     </update>
 
     <delete id="deleteById">
@@ -18,7 +18,7 @@
     </delete>
 
     <select id="getItemById" resultMap="userResultMap">
-        <![CDATA[SELECT * FROM newsPortal.Users WHERE id = ${id};]]>
+        <![CDATA[SELECT id, name, last_name, age, Suscription_level_id as sl_id FROM newsPortal.Users WHERE id = ${id};]]>
     </select>
 
     <resultMap type="com.solvd.newsPortal.models.user.User" id="userResultMap" autoMapping="false">
@@ -26,6 +26,6 @@
         <result column="name" property="name"/>
         <result column="last_name" property="lastName"/>
         <result column="age" property="age"/>
-        <association property="suscription_level" resultMap="com.solvd.newsPortal.dao.ISuscription_levelDAO.slResultMap"/>
+        <association property="suscription_level" columnPrefix="sl_" resultMap="com.solvd.newsPortal.dao.ISuscription_levelDAO.slResultMap"/>
     </resultMap>
 </mapper>

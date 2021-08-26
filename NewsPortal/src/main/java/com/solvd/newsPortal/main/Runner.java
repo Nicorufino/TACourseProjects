@@ -17,6 +17,7 @@ import com.solvd.newsPortal.models.user.User;
 import com.solvd.newsPortal.dom.Serializer;
 import com.solvd.newsPortal.services.IArticleService;
 import com.solvd.newsPortal.services.impl.ArticleService;
+import com.solvd.newsPortal.services.impl.UserService;
 import org.apache.log4j.Logger;
 import org.xml.sax.SAXException;
 
@@ -84,8 +85,11 @@ public class Runner {
 
         objectMapper.writeValue(new File("src/main/resources/Marshalled.json"), first);
         */
-        ArticleDAO dao = new ArticleDAO();
-        LOGGER.debug(dao.getItemById(11l));
+        ArticleService articleService = new ArticleService();
+        LOGGER.debug(articleService.getArticleById(11L));
+
+        UserService userService = new UserService();
+        LOGGER.debug(userService.getUserById(2L));
     }
 }
 

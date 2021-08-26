@@ -36,14 +36,14 @@ public class Serializer {
         // complex types
         Element suscriptionLevel = document.createElement("suscriptionLevel");
         root.appendChild(suscriptionLevel);
-        suscriptionLevel.setAttribute("id", String.valueOf(article.getSuscription_level().getId()));
+        suscriptionLevel.setAttribute("id", String.valueOf(article.getSuscription_levelRequired().getId()));
 
         Element slName = document.createElement("name");
-        slName.appendChild(document.createTextNode(article.getSuscription_level().getName()));
+        slName.appendChild(document.createTextNode(article.getSuscription_levelRequired().getName()));
         suscriptionLevel.appendChild(slName);
 
         Element cost = document.createElement("cost");
-        cost.appendChild(document.createTextNode(String.valueOf(article.getSuscription_level().getCost())));
+        cost.appendChild(document.createTextNode(String.valueOf(article.getSuscription_levelRequired().getCost())));
         suscriptionLevel.appendChild(cost);
 
 

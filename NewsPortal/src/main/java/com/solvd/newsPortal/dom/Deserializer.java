@@ -56,7 +56,7 @@ public class Deserializer {
                 String name = element.getElementsByTagName("name").item(1).getTextContent();
                 Float cost = Float.valueOf(element.getElementsByTagName("cost").item(0).getTextContent());
                 Long id = Long.valueOf(slList.item(0).getAttributes().getNamedItem("id").getTextContent());
-                deserialized.setSuscription_level(new Suscription_level(id, name, cost));
+                deserialized.setSuscription_levelRequired(new Suscription_level(id, name, cost));
 
                 NodeList catList = element.getElementsByTagName("category");
                 String catName = element.getElementsByTagName("name").item(2).getTextContent();

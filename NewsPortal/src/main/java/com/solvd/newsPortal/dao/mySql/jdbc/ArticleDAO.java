@@ -25,7 +25,7 @@ public class ArticleDAO extends AbstractMysqlJdbcDAO<Article> implements IArticl
         a.setName(rs.getString("name"));
         a.setBody(rs.getString("body"));
         Suscription_level sl = new Suscription_level(rs.getLong("Suscription_level_id"));
-        a.setSuscription_level(sl);
+        a.setSuscription_levelRequired(sl);
         User author = new User(rs.getLong("author"));
         a.setAuthor(author);
         Category category = new Category(rs.getLong("Categories_id"));
@@ -39,7 +39,7 @@ public class ArticleDAO extends AbstractMysqlJdbcDAO<Article> implements IArticl
         ps.setString(1, item.getName());
         ps.setDate(2, Date.valueOf(item.getDate()));
         ps.setString(3, item.getBody());
-        ps.setLong(4, item.getSuscription_level().getId());
+        ps.setLong(4, item.getSuscription_levelRequired().getId());
         ps.setLong(5, item.getCategory().getId());
         ps.setLong(6, item.getAuthor().getId());
     }
