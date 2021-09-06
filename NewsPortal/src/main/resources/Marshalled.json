@@ -1,0 +1,26 @@
+{
+  "id" : 18,
+  "name" : "Marshalling with JaxB",
+  "date" : "10-08-2021",
+  "body" : "body",
+  "suscriptionLevel" : {
+    "id" : 7,
+    "name" : "test",
+    "cost" : 25.0
+  },
+  "category" : {
+    "id" : 70,
+    "name" : "test"
+  },
+  "author" : {
+    "id" : 255,
+    "firstname" : "Lorem",
+    "lastname" : "Ipsum",
+    "age" : 25,
+    "suscriptionLevel" : {
+      "id" : 7,
+      "name" : "test",
+      "cost" : 9.99
+    }
+  }
+}

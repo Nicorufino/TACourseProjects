@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<articles>
+    <article id="18">
+        <name>Marshalling with JaxB</name>
+        <date>10-08-2021</date>
+        <body>body</body>
+        <suscriptionLevel id="7">
+            <name>test</name>
+            <cost>25.0</cost>
+        </suscriptionLevel>
+        <category id="70">
+            <name>test</name>
+        </category>
+        <author id="255" age="25">
+            <firstname>Lorem</firstname>
+            <lastname>Ipsum</lastname>
+            <suscriptionLevel id="7">
+                <name>test</name>
+                <cost>9.99</cost>
+            </suscriptionLevel>
+        </author>
+    </article>
+</articles>
