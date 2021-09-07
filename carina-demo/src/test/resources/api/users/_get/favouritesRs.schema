@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "created_at": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "image": {
+          "type": "object"
+        },
+        "image_id": {
+          "type": "string"
+        },
+        "sub_id": {
+          "type": "string"
+        },
+        "user_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "created_at",
+        "id",
+        "image",
+        "image_id",
+        "sub_id",
+        "user_id"
+      ]
+    }
+  ]
+}
