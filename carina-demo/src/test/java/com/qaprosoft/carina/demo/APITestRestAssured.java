@@ -5,9 +5,11 @@ import io.restassured.RestAssured;
 import io.restassured.matcher.RestAssuredMatchers.*;
 import org.apache.commons.text.CharacterPredicates;
 import org.apache.commons.text.RandomStringGenerator;
+import org.apache.log4j.Logger;
+import org.apache.log4j.spi.LoggerFactory;
+
 import org.hamcrest.Matchers.*;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 import org.testng.annotations.Test;
 import static org.hamcrest.Matchers.equalTo;
 
@@ -22,7 +24,7 @@ import static io.restassured.RestAssured.given;
 import io.restassured.module.jsv.JsonSchemaValidator;
 
 public class APITestRestAssured extends AbstractTest {
-    private final static Logger LOGGER = LoggerFactory.getLogger(MethodHandles.Lookup.class);
+    private final static Logger LOGGER = Logger.getLogger(APITestRestAssured.class);
     private Integer id;
 
     @Test(groups = "creation")

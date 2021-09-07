@@ -11,16 +11,16 @@ import com.qaprosoft.carina.demo.api.GetUserMethods;
 import com.qaprosoft.carina.demo.api.GetVoteMethod;
 import com.qaprosoft.carina.demo.api.PostUserMethod;
 import com.qaprosoft.carina.demo.db.models.Vote;
+import org.apache.log4j.Logger;
 import org.skyscreamer.jsonassert.JSONCompareMode;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 import org.testng.annotations.Test;
 
 import java.lang.invoke.MethodHandles;
 import java.util.List;
 
 public class APITest extends AbstractTest {
-    private final static Logger LOGGER = LoggerFactory.getLogger(MethodHandles.Lookup.class);
+    private final static Logger LOGGER = Logger.getLogger(APITest.class);
     private Long id;
 
     @Test(groups = "info")
