@@ -72,7 +72,7 @@ public class APITest extends AbstractTest {
         id = votes.stream().findFirst().get().getId();
     }
 
-    @Test//dependsOnGroups = "getID")
+    @Test(dependsOnGroups = "getID")
     public void deleteVote(){
         DeleteUserMethod deleteUserMethod = new DeleteUserMethod();
         deleteUserMethod.replaceUrlPlaceholder("vote_id", String.valueOf(id));
