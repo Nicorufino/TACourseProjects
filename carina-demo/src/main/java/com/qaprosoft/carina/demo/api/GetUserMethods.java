@@ -21,13 +21,7 @@ import com.qaprosoft.carina.core.foundation.utils.Configuration;
 import java.util.Properties;
 
 public class GetUserMethods extends AbstractApiMethodV2 {
-    public GetUserMethods(String id, String type) {
-        super(null, "api/users/_get/rs.json", new Properties());
-        replaceUrlPlaceholder("base_url", Configuration.getEnvArg("api_url"));
-        replaceUrlPlaceholder("id", id);
-        replaceUrlPlaceholder("type", type);
-        replaceUrlPlaceholder("api_key", "j6v5g7p4yjuaqby2n8cmp3d9");
-    }
+
     public GetUserMethods() {
         super(null, "api/users/_get/rs.json", new Properties());
         replaceUrlPlaceholder("base_url", Configuration.getEnvArg("api_url"));

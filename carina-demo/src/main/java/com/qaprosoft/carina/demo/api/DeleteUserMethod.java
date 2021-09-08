@@ -22,9 +22,9 @@ import io.restassured.http.Header;
 public class DeleteUserMethod extends AbstractApiMethodV2 {
 
     public DeleteUserMethod() {
-        super("api/users/_delete/rq.json", "api/users/_delete/rs.json", "api/users/user.properties");
+        super("api/users/_delete/rq.json", "api/users/_delete/rs.json", "api/users/api.properties");
         replaceUrlPlaceholder("base_url", Configuration.getEnvArg("api_url"));
-        request.header(new Header("x-api-key", "2c713889-b86e-4a39-8e1e-315b7e791f67"));
+        request.header(new Header("x-api-key", super.getProperties().getProperty("api_key")));
     }
 
 }

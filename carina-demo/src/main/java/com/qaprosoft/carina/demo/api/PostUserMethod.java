@@ -23,8 +23,8 @@ import java.util.Properties;
 
 public class PostUserMethod extends AbstractApiMethodV2 {
     public PostUserMethod() {
-        super("api/users/_post/rq.json", "api/users/_post/rs.json", new Properties());
+        super("api/users/_post/rq.json", "api/users/_post/rs.json", "api/users/api.properties");
         replaceUrlPlaceholder("base_url", Configuration.getEnvArg("api_url"));
-        request.header(new Header("x-api-key", "2c713889-b86e-4a39-8e1e-315b7e791f67"));
+        request.header(new Header("x-api-key", super.getProperties().getProperty("api_key")));
     }
 }
