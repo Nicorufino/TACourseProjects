@@ -1,72 +1,93 @@
-/*
- * Copyright 2013-2021 QAPROSOFT (http://qaprosoft.com/).
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 package com.qaprosoft.carina.demo.gui.pages;
-
-import java.lang.invoke.MethodHandles;
-import java.util.List;
 
 import com.qaprosoft.carina.core.foundation.utils.Configuration;
 import com.qaprosoft.carina.core.foundation.utils.R;
+import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
+import com.qaprosoft.carina.core.gui.AbstractPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
-import com.qaprosoft.carina.core.gui.AbstractPage;
-import com.qaprosoft.carina.demo.gui.components.FooterMenu;
-import com.qaprosoft.carina.demo.gui.components.WeValuePrivacyAd;
-
+import java.lang.invoke.MethodHandles;
 
 public class HomePage extends AbstractPage {
-    private static final Logger LOGGER = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
+    private final static Logger LOGGER = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
 
-    @FindBy(id = "footmenu")
-    private FooterMenu footerMenu;
+    @FindBy(id = "gh-ac")
+    private ExtendedWebElement searchBar;
 
-    @FindBy(xpath = "//div[contains(@class, 'brandmenu-v2')]//a")
-    private List<ExtendedWebElement> brandLinks;
+    @FindBy(id = "gh-btn")
+    private ExtendedWebElement searchButton;
 
-    @FindBy(className = "news-column-index")
-    private ExtendedWebElement newsColumn;
+    @FindBy(xpath = "//li[@id=\"gh-p-1\"]/a")
+    private ExtendedWebElement dailyDealsButton;
+
+    @FindBy(id = "gh-shop-a")
+    private ExtendedWebElement categoriesButton;
+
+    @FindBy(xpath = "//a[@_sp=\"m570.l3413\"]")
+    private ExtendedWebElement technologyButton;
+
+    public TechnologyPage openTechnology(){
+        categoriesButton.click();
+        technologyButton.click();
+        return new TechnologyPage(driver);
+    }
+
+    public DealsPage openDeals(){
+        dailyDealsButton.click();
+        return new DealsPage(driver);
+    }
+
+    public ResultsPage search(String query){
+        searchBar.type(query);
+        searchBar.click();
+        return new ResultsPage(driver);
+    }
 
     public HomePage(WebDriver driver) {
         super(driver);
-        setUiLoadedMarker(newsColumn);
         setPageAbsoluteURL(R.CONFIG.get(Configuration.Parameter.URL.getKey()));
     }
 
-    public FooterMenu getFooterMenu() {
-        return footerMenu;
+    public ExtendedWebElement getSearchBar() {
+        return searchBar;
     }
 
-    public BrandModelsPage selectBrand(String brand) {
-        LOGGER.info("selecting '" + brand + "' brand...");
-        for (ExtendedWebElement brandLink : brandLinks) {
-            String currentBrand = brandLink.getText();
-            LOGGER.info("currentBrand: " + currentBrand);
-            if (brand.equalsIgnoreCase(currentBrand)) {
-                brandLink.click();
-                return new BrandModelsPage(driver);
-            }
-        }
-        throw new RuntimeException("Unable to open brand: " + brand);
+    public void setSearchBar(ExtendedWebElement searchBar) {
+        this.searchBar = searchBar;
     }
-    
-    public WeValuePrivacyAd getWeValuePrivacyAd() {
-    	return new WeValuePrivacyAd(driver);
+
+    public ExtendedWebElement getSearchButton() {
+        return searchButton;
+    }
+
+    public void setSearchButton(ExtendedWebElement searchButton) {
+        this.searchButton = searchButton;
+    }
+
+    public ExtendedWebElement getDailyDealsButton() {
+        return dailyDealsButton;
+    }
+
+    public void setDailyDealsButton(ExtendedWebElement dailyDealsButton) {
+        this.dailyDealsButton = dailyDealsButton;
+    }
+
+    public ExtendedWebElement getCategoriesButton() {
+        return categoriesButton;
+    }
+
+    public void setCategoriesButton(ExtendedWebElement categoriesButton) {
+        this.categoriesButton = categoriesButton;
+    }
+
+    public ExtendedWebElement getTechnologyButton() {
+        return technologyButton;
+    }
+
+    public void setTechnologyButton(ExtendedWebElement technologyButton) {
+        this.technologyButton = technologyButton;
     }
 }
