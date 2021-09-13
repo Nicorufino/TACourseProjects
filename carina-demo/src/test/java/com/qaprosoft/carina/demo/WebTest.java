@@ -8,8 +8,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import java.lang.invoke.MethodHandles;
+import java.util.Locale;
 import java.util.Random;
 
 public class WebTest extends AbstractTest {
@@ -24,9 +26,8 @@ public class WebTest extends AbstractTest {
 
         query = "iphone";
         ResultsPage resultsPage = homePage.search(query);
-        Assert.assertTrue(resultsPage.isPageOpened());
+        resultsPage.getResults().stream().forEach(result -> Assert.assertTrue(result.toLowerCase(Locale.ROOT).contains(query)));
 
-        resultsPage.getResults().stream().forEach(result -> Assert.assertTrue(result.getText().contains("iphone")));
 
     }
 

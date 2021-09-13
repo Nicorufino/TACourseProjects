@@ -42,7 +42,7 @@ public class HomePage extends AbstractPage {
 
     public ResultsPage search(String query){
         searchBar.type(query);
-        searchBar.click();
+        searchButton.click();
         return new ResultsPage(driver);
     }
 

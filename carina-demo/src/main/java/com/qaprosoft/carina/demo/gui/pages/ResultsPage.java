@@ -9,15 +9,16 @@ import org.slf4j.LoggerFactory;
 
 import java.lang.invoke.MethodHandles;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ResultsPage extends AbstractPage {
     private final static Logger LOGGER = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
 
-    @FindBy(xpath = "//*[@id=\"srp-river-results\"]/ul/li/div")
+    @FindBy(xpath = "//*[@class=\"s-item__title\"]")
     private List<ExtendedWebElement> results;
 
-    public List<ExtendedWebElement> getResults() {
-        return results;
+    public List<String> getResults() {
+        return results.stream().map(r -> r.getText()).collect(Collectors.toList());
     }
 
     public void setResults(List<ExtendedWebElement> results) {
