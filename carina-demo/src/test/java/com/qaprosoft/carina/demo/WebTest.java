@@ -1,8 +1,11 @@
 package com.qaprosoft.carina.demo;
 
+import annotations.TestInfo;
 import com.qaprosoft.carina.core.foundation.AbstractTest;
+import com.qaprosoft.carina.core.foundation.dataprovider.annotations.CsvDataSourceParameters;
 import com.qaprosoft.carina.core.foundation.utils.ownership.MethodOwner;
 import com.qaprosoft.carina.demo.gui.pages.*;
+import dataProviders.FileDataProvider;
 import org.apache.commons.text.RandomStringGenerator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,17 +19,18 @@ import java.util.Random;
 
 public class WebTest extends AbstractTest {
    private final static Logger LOGGER = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
-   private String query;
-    @Test
+
+    @Test(dataProvider = "searchQueries", dataProviderClass = FileDataProvider.class)
+    @TestInfo(count = 2, path = "src/test/resources/queries.csv")
     @MethodOwner(owner = "nrufino")
-    public void searchTest(){
+    public void searchTest(String query){
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
         Assert.assertTrue(homePage.isPageOpened(), "Home page is not opened");
 
-        query = "iphone";
         ResultsPage resultsPage = homePage.search(query);
-        resultsPage.getResults().stream().forEach(result -> Assert.assertTrue(result.toLowerCase(Locale.ROOT).contains(query)));
+        String finalQuery = query;
+        resultsPage.getResults().stream().forEach(result -> Assert.assertTrue(result.toLowerCase(Locale.ROOT).contains(finalQuery)));
 
 
     }
