@@ -1,21 +1,16 @@
 package com.qaprosoft.carina.demo;
 
-import annotations.TestInfo;
 import com.qaprosoft.carina.core.foundation.AbstractTest;
-import com.qaprosoft.carina.core.foundation.dataprovider.annotations.CsvDataSourceParameters;
 import com.qaprosoft.carina.core.foundation.utils.ownership.MethodOwner;
 import com.qaprosoft.carina.demo.gui.pages.*;
 import dataProviders.FileDataProvider;
-import org.apache.commons.text.RandomStringGenerator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 import java.lang.invoke.MethodHandles;
 import java.util.Locale;
-import java.util.Random;
 
 public class WebTest extends AbstractTest {
    private final static Logger LOGGER = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());

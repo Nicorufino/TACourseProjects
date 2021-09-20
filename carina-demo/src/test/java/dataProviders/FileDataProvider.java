@@ -1,6 +1,7 @@
 package dataProviders;
 
-import annotations.TestInfo;
+
+import com.qaprosoft.carina.demo.annotations.TestInfo;
 import org.testng.annotations.DataProvider;
 
 import java.io.IOException;
@@ -9,7 +10,6 @@ import java.lang.reflect.Method;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.Collections;
 import java.util.List;
 
 public class FileDataProvider {
